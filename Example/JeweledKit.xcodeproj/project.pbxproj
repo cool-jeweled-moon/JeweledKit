@@ -14,12 +14,9 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		73A7B4EFEA604ED357AAE2AC /* Pods_JeweledKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FB969081C0F141F96F2EFC /* Pods_JeweledKit_Example.framework */; };
-		A1188B7C25052B3500FACBE6 /* Contract.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B7B25052B3500FACBE6 /* Contract.swift */; };
 		A1188B7E25052B3D00FACBE6 /* ErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B7D25052B3D00FACBE6 /* ErrorParser.swift */; };
 		A1188B8025052B4900FACBE6 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B7F25052B4900FACBE6 /* BaseRequest.swift */; };
 		A1188B8325052BF800FACBE6 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1188B8125052BF800FACBE6 /* DataModel.xcdatamodeld */; };
-		A1188B8525052DE600FACBE6 /* ContractsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B8425052DE600FACBE6 /* ContractsRequest.swift */; };
-		A1188B8725052EF200FACBE6 /* BaseGraphRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B8625052EF200FACBE6 /* BaseGraphRequest.swift */; };
 		A1F01D8B2507D70A00988888 /* Procedure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F01D8A2507D70A00988888 /* Procedure.swift */; };
 		A1F01D8D2507D8AF00988888 /* ProceduresRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F01D8C2507D8AF00988888 /* ProceduresRequest.swift */; };
 /* End PBXBuildFile section */
@@ -51,12 +48,9 @@
 		680400B23DFB7F7A09411B9C /* Pods_JeweledKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JeweledKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		706345074CB169F13F42BD10 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		7303D4C0831C603C695B8448 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		A1188B7B25052B3500FACBE6 /* Contract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contract.swift; sourceTree = "<group>"; };
 		A1188B7D25052B3D00FACBE6 /* ErrorParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorParser.swift; sourceTree = "<group>"; };
 		A1188B7F25052B4900FACBE6 /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
 		A1188B8225052BF800FACBE6 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
-		A1188B8425052DE600FACBE6 /* ContractsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContractsRequest.swift; path = ../../JeweledKit/Classes/Core/Repository/ContractsRequest.swift; sourceTree = "<group>"; };
-		A1188B8625052EF200FACBE6 /* BaseGraphRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseGraphRequest.swift; path = ../../JeweledKit/Classes/Core/Repository/BaseGraphRequest.swift; sourceTree = "<group>"; };
 		A1F01D8A2507D70A00988888 /* Procedure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Procedure.swift; sourceTree = "<group>"; };
 		A1F01D8C2507D8AF00988888 /* ProceduresRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceduresRequest.swift; sourceTree = "<group>"; };
 		C2F05CA803EEFE127F1CF637 /* Pods-JeweledKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeweledKit_Example.release.xcconfig"; path = "Target Support Files/Pods-JeweledKit_Example/Pods-JeweledKit_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -185,9 +179,7 @@
 		A1188B782505163B00FACBE6 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
-				A1188B8425052DE600FACBE6 /* ContractsRequest.swift */,
 				A1188B7F25052B4900FACBE6 /* BaseRequest.swift */,
-				A1188B8625052EF200FACBE6 /* BaseGraphRequest.swift */,
 				A1F01D8C2507D8AF00988888 /* ProceduresRequest.swift */,
 			);
 			name = Requests;
@@ -196,7 +188,6 @@
 		A1188B792505164000FACBE6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				A1188B7B25052B3500FACBE6 /* Contract.swift */,
 				A1F01D8A2507D70A00988888 /* Procedure.swift */,
 			);
 			name = Models;
@@ -390,8 +381,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1188B7C25052B3500FACBE6 /* Contract.swift in Sources */,
-				A1188B8525052DE600FACBE6 /* ContractsRequest.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				A1188B8025052B4900FACBE6 /* BaseRequest.swift in Sources */,
 				A1188B8325052BF800FACBE6 /* DataModel.xcdatamodeld in Sources */,
@@ -399,7 +388,6 @@
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				A1188B7E25052B3D00FACBE6 /* ErrorParser.swift in Sources */,
 				A1F01D8B2507D70A00988888 /* Procedure.swift in Sources */,
-				A1188B8725052EF200FACBE6 /* BaseGraphRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

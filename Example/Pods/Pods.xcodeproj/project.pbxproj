@@ -20,9 +20,9 @@
 		A1188B68250512CB00FACBE6 /* JeweledIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B5C250512CB00FACBE6 /* JeweledIdentifiable.swift */; };
 		A1188B69250512CB00FACBE6 /* NSManagedObject+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B5D250512CB00FACBE6 /* NSManagedObject+Create.swift */; };
 		A1188B6A250512CB00FACBE6 /* JeweledPersistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B5E250512CB00FACBE6 /* JeweledPersistable.swift */; };
-		A1188B6F2505131700FACBE6 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B6E2505131700FACBE6 /* UITableView.swift */; };
-		A1188B722505137500FACBE6 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B712505137500FACBE6 /* NibLoadable.swift */; };
-		A1188B742505138500FACBE6 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B732505138400FACBE6 /* UIView.swift */; };
+		A13F6A552511155E00C8FED3 /* JeweledNibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13F6A542511155E00C8FED3 /* JeweledNibLoadable.swift */; };
+		A13F6A582511158800C8FED3 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13F6A562511158700C8FED3 /* UITableView.swift */; };
+		A13F6A592511158800C8FED3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13F6A572511158800C8FED3 /* UIView.swift */; };
 		A1BDFC5D2510D44600B94383 /* JeweledStackScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BDFC5C2510D44600B94383 /* JeweledStackScrollView.swift */; };
 		A1BDFC5F2510E59200B94383 /* UIView+FirstResponding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BDFC5E2510E59200B94383 /* UIView+FirstResponding.swift */; };
 		A1BDFC622510EFE400B94383 /* JeweledSimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BDFC612510EFE400B94383 /* JeweledSimpleTableViewController.swift */; };
@@ -95,9 +95,9 @@
 		A1188B5C250512CB00FACBE6 /* JeweledIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeweledIdentifiable.swift; sourceTree = "<group>"; };
 		A1188B5D250512CB00FACBE6 /* NSManagedObject+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Create.swift"; sourceTree = "<group>"; };
 		A1188B5E250512CB00FACBE6 /* JeweledPersistable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeweledPersistable.swift; sourceTree = "<group>"; };
-		A1188B6E2505131700FACBE6 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UITableView.swift; path = ../../Core/Repository/UITableView.swift; sourceTree = "<group>"; };
-		A1188B712505137500FACBE6 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NibLoadable.swift; path = ../../Core/Repository/NibLoadable.swift; sourceTree = "<group>"; };
-		A1188B732505138400FACBE6 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = ../../Core/Repository/UIView.swift; sourceTree = "<group>"; };
+		A13F6A542511155E00C8FED3 /* JeweledNibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeweledNibLoadable.swift; sourceTree = "<group>"; };
+		A13F6A562511158700C8FED3 /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		A13F6A572511158800C8FED3 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		A1BDFC5C2510D44600B94383 /* JeweledStackScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeweledStackScrollView.swift; sourceTree = "<group>"; };
 		A1BDFC5E2510E59200B94383 /* UIView+FirstResponding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+FirstResponding.swift"; sourceTree = "<group>"; };
 		A1BDFC612510EFE400B94383 /* JeweledSimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeweledSimpleTableViewController.swift; sourceTree = "<group>"; };
@@ -295,8 +295,8 @@
 		A1188B6D2505130900FACBE6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A1188B6E2505131700FACBE6 /* UITableView.swift */,
-				A1188B732505138400FACBE6 /* UIView.swift */,
+				A13F6A562511158700C8FED3 /* UITableView.swift */,
+				A13F6A572511158800C8FED3 /* UIView.swift */,
 				A1BDFC5E2510E59200B94383 /* UIView+FirstResponding.swift */,
 			);
 			path = Extensions;
@@ -305,7 +305,7 @@
 		A1188B702505136B00FACBE6 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				A1188B712505137500FACBE6 /* NibLoadable.swift */,
+				A13F6A542511155E00C8FED3 /* JeweledNibLoadable.swift */,
 				A1BDFC632510F06400B94383 /* JeweledConfigurableView.swift */,
 			);
 			path = Protocols;
@@ -543,6 +543,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13F6A592511158800C8FED3 /* UIView.swift in Sources */,
+				A13F6A552511155E00C8FED3 /* JeweledNibLoadable.swift in Sources */,
 				A1BDFC5D2510D44600B94383 /* JeweledStackScrollView.swift in Sources */,
 				A1188B61250512CB00FACBE6 /* JeweledNetworkLogFormatter.swift in Sources */,
 				A1188B6A250512CB00FACBE6 /* JeweledPersistable.swift in Sources */,
@@ -552,14 +554,12 @@
 				A1188B60250512CB00FACBE6 /* JeweledRepository.swift in Sources */,
 				A1188B68250512CB00FACBE6 /* JeweledIdentifiable.swift in Sources */,
 				A1188B69250512CB00FACBE6 /* NSManagedObject+Create.swift in Sources */,
+				A13F6A582511158800C8FED3 /* UITableView.swift in Sources */,
 				A1188B62250512CB00FACBE6 /* JeweledErrorParser.swift in Sources */,
 				A1188B64250512CB00FACBE6 /* URLRequestFactory.swift in Sources */,
-				A1188B722505137500FACBE6 /* NibLoadable.swift in Sources */,
 				A1BDFC642510F06400B94383 /* JeweledConfigurableView.swift in Sources */,
 				A1BDFC622510EFE400B94383 /* JeweledSimpleTableViewController.swift in Sources */,
-				A1188B742505138500FACBE6 /* UIView.swift in Sources */,
 				A1188B66250512CB00FACBE6 /* NSObject+ClassName.swift in Sources */,
-				A1188B6F2505131700FACBE6 /* UITableView.swift in Sources */,
 				A1BDFC6B2510F3FD00B94383 /* JeweledViewWithSeparators.swift in Sources */,
 				A1188B65250512CB00FACBE6 /* JeweledRequestLoader.swift in Sources */,
 				E35D4605828FBD7E84A439AFD4042123 /* JeweledKit-dummy.m in Sources */,
