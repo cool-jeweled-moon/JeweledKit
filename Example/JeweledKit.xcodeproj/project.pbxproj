@@ -9,16 +9,11 @@
 /* Begin PBXBuildFile section */
 		26CA3DE44180FBC6FA9649B2 /* Pods_JeweledKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 680400B23DFB7F7A09411B9C /* Pods_JeweledKit_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		73A7B4EFEA604ED357AAE2AC /* Pods_JeweledKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FB969081C0F141F96F2EFC /* Pods_JeweledKit_Example.framework */; };
-		A1188B7E25052B3D00FACBE6 /* ErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B7D25052B3D00FACBE6 /* ErrorParser.swift */; };
-		A1188B8025052B4900FACBE6 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B7F25052B4900FACBE6 /* BaseRequest.swift */; };
-		A1188B8325052BF800FACBE6 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1188B8125052BF800FACBE6 /* DataModel.xcdatamodeld */; };
-		A1F01D8B2507D70A00988888 /* Procedure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F01D8A2507D70A00988888 /* Procedure.swift */; };
-		A1F01D8D2507D8AF00988888 /* ProceduresRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F01D8C2507D8AF00988888 /* ProceduresRequest.swift */; };
+		A13F6A5C2511182C00C8FED3 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A13F6A5A2511182C00C8FED3 /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +33,6 @@
 		607FACD01AFB9204008FA782 /* JeweledKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JeweledKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* JeweledKit_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JeweledKit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,11 +42,7 @@
 		680400B23DFB7F7A09411B9C /* Pods_JeweledKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JeweledKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		706345074CB169F13F42BD10 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		7303D4C0831C603C695B8448 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		A1188B7D25052B3D00FACBE6 /* ErrorParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorParser.swift; sourceTree = "<group>"; };
-		A1188B7F25052B4900FACBE6 /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
-		A1188B8225052BF800FACBE6 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
-		A1F01D8A2507D70A00988888 /* Procedure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Procedure.swift; sourceTree = "<group>"; };
-		A1F01D8C2507D8AF00988888 /* ProceduresRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProceduresRequest.swift; sourceTree = "<group>"; };
+		A13F6A5B2511182C00C8FED3 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		C2F05CA803EEFE127F1CF637 /* Pods-JeweledKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeweledKit_Example.release.xcconfig"; path = "Target Support Files/Pods-JeweledKit_Example/Pods-JeweledKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E3FE5219424DA94FB6D0BAEE /* Pods-JeweledKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeweledKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-JeweledKit_Tests/Pods-JeweledKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,8 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				A1188B75250515BA00FACBE6 /* UI */,
-				A1188B76250515BF00FACBE6 /* Core */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for JeweledKit";
@@ -122,6 +110,7 @@
 		607FACD31AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A13F6A5A2511182C00C8FED3 /* DataModel.xcdatamodeld */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD41AFB9204008FA782 /* Info.plist */,
@@ -154,50 +143,6 @@
 				7303D4C0831C603C695B8448 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
-		A1188B75250515BA00FACBE6 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-			);
-			name = UI;
-			sourceTree = "<group>";
-		};
-		A1188B76250515BF00FACBE6 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				A1188B7D25052B3D00FACBE6 /* ErrorParser.swift */,
-				A1188B7A2505164700FACBE6 /* Storage */,
-				A1188B792505164000FACBE6 /* Models */,
-				A1188B782505163B00FACBE6 /* Requests */,
-				A1188B8125052BF800FACBE6 /* DataModel.xcdatamodeld */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		A1188B782505163B00FACBE6 /* Requests */ = {
-			isa = PBXGroup;
-			children = (
-				A1188B7F25052B4900FACBE6 /* BaseRequest.swift */,
-				A1F01D8C2507D8AF00988888 /* ProceduresRequest.swift */,
-			);
-			name = Requests;
-			sourceTree = "<group>";
-		};
-		A1188B792505164000FACBE6 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				A1F01D8A2507D70A00988888 /* Procedure.swift */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		A1188B7A2505164700FACBE6 /* Storage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Storage;
 			sourceTree = "<group>";
 		};
 		DB3616FAF6407AB9FDAA95FB /* Pods */ = {
@@ -381,13 +326,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				A1188B8025052B4900FACBE6 /* BaseRequest.swift in Sources */,
-				A1188B8325052BF800FACBE6 /* DataModel.xcdatamodeld in Sources */,
-				A1F01D8D2507D8AF00988888 /* ProceduresRequest.swift in Sources */,
+				A13F6A5C2511182C00C8FED3 /* DataModel.xcdatamodeld in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				A1188B7E25052B3D00FACBE6 /* ErrorParser.swift in Sources */,
-				A1F01D8B2507D70A00988888 /* Procedure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -631,14 +571,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A1188B8125052BF800FACBE6 /* DataModel.xcdatamodeld */ = {
+		A13F6A5A2511182C00C8FED3 /* DataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A1188B8225052BF800FACBE6 /* DataModel.xcdatamodel */,
+				A13F6A5B2511182C00C8FED3 /* DataModel.xcdatamodel */,
 			);
-			currentVersion = A1188B8225052BF800FACBE6 /* DataModel.xcdatamodel */;
-			name = DataModel.xcdatamodeld;
-			path = ../../JeweledKit/Classes/Core/Repository/DataModel.xcdatamodeld;
+			currentVersion = A13F6A5B2511182C00C8FED3 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

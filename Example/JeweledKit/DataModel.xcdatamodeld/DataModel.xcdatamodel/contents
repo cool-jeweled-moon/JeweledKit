@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19G73" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Procedure" representedClassName=".DBProcedure" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="isFavor" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="maxSum" optional="YES" attributeType="String"/>
+        <attribute name="number" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="publicationDateTime" optional="YES" attributeType="String"/>
+        <attribute name="purchaseNumber" optional="YES" attributeType="String"/>
+        <attribute name="purchaseObjectInfo" optional="YES" attributeType="String"/>
+        <attribute name="requestCount" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="status" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Procedure" positionX="-54" positionY="-9" width="128" height="193"/>
+    </elements>
+</model>

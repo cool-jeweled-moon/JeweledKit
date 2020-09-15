@@ -47,3 +47,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+class ViewController: UIViewController {}
