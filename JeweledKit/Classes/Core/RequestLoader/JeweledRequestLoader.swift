@@ -85,10 +85,9 @@ public class JeweledRequestLoader: JeweledRequestLoaderProtocol {
             if let payloadKey = request.payloadKey, let data = data,
                 let json = try? JSONSerialization.jsonObject(with: data, options: []),
                 let jsonDictionary = json as? [String: Any],
-                let payload = jsonDictionary[payloadKey] as? [String: Any],
-                let entities = payload["entities"] as? [[String: Any]] {
+                let payload = jsonDictionary[payloadKey] as? [String: Any] {
                 
-                resultData = try? JSONSerialization.data(withJSONObject: entities.compactMap { $0["procedure"] },
+                resultData = try? JSONSerialization.data(withJSONObject: payload,
                                                          options: [])
             }
             
