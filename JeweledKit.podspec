@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JeweledKit'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'A short description.'
 
   s.description      = <<-DESC
@@ -19,7 +19,7 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'cool-jeweled-moon' => 'aneli.bob@gmail.com' }
   s.source           = { :git => 'https://github.com/cool-jeweled-moon/JeweledKit.git', :tag => s.version.to_s }
-
+  s.swift_version    = '5.0'
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'JeweledKit/Classes/**/*'
