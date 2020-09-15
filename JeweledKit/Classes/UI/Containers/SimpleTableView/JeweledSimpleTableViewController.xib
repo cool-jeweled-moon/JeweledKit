@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JeweledSimpleTableViewController" customModule="JeweledKit">
+            <connections>
+                <outlet property="tableView" destination="qKV-ec-jYh" id="yie-2k-HSh"/>
+                <outlet property="tableViewBottomConstraint" destination="52T-Vo-tH3" id="fIB-0z-kAX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewHeightConstraint" destination="7Yp-KH-KgB" id="PX2-Ag-dal"/>
+                <outlet property="viewWithSeparators" destination="YgF-mf-Nd5" id="we8-Sf-yZR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="274"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qom-VA-3nP">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="274"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="56" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qKV-ec-jYh">
+                            <rect key="frame" x="0.0" y="0.0" width="400" height="274"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YgF-mf-Nd5" customClass="ViewWithSeparators" customModule="JeweledKit" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="400" height="274"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="YgF-mf-Nd5" secondAttribute="bottom" id="0mx-qm-t3h"/>
+                        <constraint firstAttribute="bottom" secondItem="qKV-ec-jYh" secondAttribute="bottom" id="52T-Vo-tH3"/>
+                        <constraint firstAttribute="height" priority="900" id="7Yp-KH-KgB"/>
+                        <constraint firstAttribute="trailing" secondItem="qKV-ec-jYh" secondAttribute="trailing" id="H0v-Me-U5e"/>
+                        <constraint firstItem="YgF-mf-Nd5" firstAttribute="leading" secondItem="Qom-VA-3nP" secondAttribute="leading" id="kun-tM-B9Q"/>
+                        <constraint firstItem="YgF-mf-Nd5" firstAttribute="top" secondItem="Qom-VA-3nP" secondAttribute="top" id="sFM-eH-bJb"/>
+                        <constraint firstItem="qKV-ec-jYh" firstAttribute="top" secondItem="Qom-VA-3nP" secondAttribute="top" id="tIy-vb-7Qi"/>
+                        <constraint firstAttribute="trailing" secondItem="YgF-mf-Nd5" secondAttribute="trailing" id="ura-aP-pXe"/>
+                        <constraint firstItem="qKV-ec-jYh" firstAttribute="leading" secondItem="Qom-VA-3nP" secondAttribute="leading" id="xrL-Aq-yTw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Qom-VA-3nP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Rf6-zK-xXX"/>
+                <constraint firstAttribute="bottom" secondItem="Qom-VA-3nP" secondAttribute="bottom" id="dsr-FB-jHQ"/>
+                <constraint firstAttribute="trailing" secondItem="Qom-VA-3nP" secondAttribute="trailing" id="gJJ-cV-pZx"/>
+                <constraint firstItem="Qom-VA-3nP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="h7E-kt-xMm"/>
+                <constraint firstItem="Qom-VA-3nP" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="l5w-Z6-2xZ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-214" y="-250"/>
+        </view>
+    </objects>
+</document>

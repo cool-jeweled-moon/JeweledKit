@@ -1,0 +1,6 @@
+framework module JeweledKit {
+  umbrella header "JeweledKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

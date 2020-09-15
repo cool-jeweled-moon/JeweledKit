@@ -1,0 +1,6 @@
+framework module Pods_JeweledKit_Example {
+  umbrella header "Pods-JeweledKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

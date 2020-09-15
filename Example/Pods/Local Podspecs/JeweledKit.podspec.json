@@ -1,0 +1,22 @@
+{
+  "name": "JeweledKit",
+  "version": "0.1.0",
+  "summary": "A short description of JeweledKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/cool-jeweled-moon/JeweledKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "cool-jeweled-moon": "aneli.bob@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/cool-jeweled-moon/JeweledKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "JeweledKit/Classes/**/*"
+}

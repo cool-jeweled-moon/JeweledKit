@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JeweledKit_Example' do
+  pod 'JeweledKit', :path => '../'
+
+  target 'JeweledKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

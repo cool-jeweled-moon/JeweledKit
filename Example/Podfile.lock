@@ -1,0 +1,16 @@
+PODS:
+  - JeweledKit (0.1.0)
+
+DEPENDENCIES:
+  - JeweledKit (from `../`)
+
+EXTERNAL SOURCES:
+  JeweledKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JeweledKit: 1869823c41104e437e948f1d717b7b7a1d54623d
+
+PODFILE CHECKSUM: 713a57df9cb1ea7ddbb915a66f28df1b68e5ac64
+
+COCOAPODS: 1.9.3
