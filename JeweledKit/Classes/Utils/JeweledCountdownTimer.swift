@@ -16,10 +16,10 @@ public class JeweledCountdownTimer: NSObject {
     
     public struct Time {
         
-        let seconds: Int
-        let minutes: Int
-        let hours: Int
-        let timeInterval: TimeInterval
+        public let seconds: Int
+        public let minutes: Int
+        public let hours: Int
+        public let timeInterval: TimeInterval
         
         init(timeInterval: TimeInterval) {
             self.hours = Int((timeInterval / .hour).truncatingRemainder(dividingBy: .minute))
