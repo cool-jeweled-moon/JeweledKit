@@ -31,6 +31,8 @@
 		A1BDFC682510F27400B94383 /* JeweledStackScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BDFC672510F27400B94383 /* JeweledStackScrollView.xib */; };
 		A1BDFC6B2510F3FD00B94383 /* JeweledViewWithSeparators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BDFC6A2510F3FD00B94383 /* JeweledViewWithSeparators.swift */; };
 		A1BDFC6D2510F43000B94383 /* JeweledViewWithSeparators.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BDFC6C2510F43000B94383 /* JeweledViewWithSeparators.xib */; };
+		A1D0FA0D2513ED46008AC3F2 /* JeweledCountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D0FA0C2513ED46008AC3F2 /* JeweledCountdownTimer.swift */; };
+		A1D0FA112513EDBE008AC3F2 /* TimeInterval+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D0FA102513EDBE008AC3F2 /* TimeInterval+Time.swift */; };
 		A819EC9C3996EFB3E17519AB91F687A2 /* Pods-JeweledKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F28DDA399A6D3EC44A6D9C6D7A20F9E4 /* Pods-JeweledKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B069C113311248EB908DFE643731D043 /* Pods-JeweledKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81255491825FD497967FC41A8A5EC618 /* Pods-JeweledKit_Tests-dummy.m */; };
 		E0A72D23CC30CBD87757A92C6E4F89BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -106,6 +108,8 @@
 		A1BDFC672510F27400B94383 /* JeweledStackScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JeweledStackScrollView.xib; sourceTree = "<group>"; };
 		A1BDFC6A2510F3FD00B94383 /* JeweledViewWithSeparators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeweledViewWithSeparators.swift; sourceTree = "<group>"; };
 		A1BDFC6C2510F43000B94383 /* JeweledViewWithSeparators.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JeweledViewWithSeparators.xib; sourceTree = "<group>"; };
+		A1D0FA0C2513ED46008AC3F2 /* JeweledCountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeweledCountdownTimer.swift; sourceTree = "<group>"; };
+		A1D0FA102513EDBE008AC3F2 /* TimeInterval+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Time.swift"; sourceTree = "<group>"; };
 		C149DB6E65C83E814206EAF31ACD5A20 /* Pods-JeweledKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JeweledKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C9D8DC76B29A6C0E47F49BD031EFDA86 /* Pods-JeweledKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JeweledKit_Example.modulemap"; sourceTree = "<group>"; };
 		D2BC0BD323CA2244825446C4BC367011 /* JeweledKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JeweledKit.release.xcconfig; sourceTree = "<group>"; };
@@ -232,6 +236,8 @@
 		A1188B4F250512CB00FACBE6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A1D0FA0F2513EDB2008AC3F2 /* Constants */,
+				A1D0FA0B2513ED35008AC3F2 /* Utils */,
 				A1188B6C250512D400FACBE6 /* UI */,
 				A1188B50250512CB00FACBE6 /* Core */,
 			);
@@ -353,6 +359,22 @@
 				A1BDFC6C2510F43000B94383 /* JeweledViewWithSeparators.xib */,
 			);
 			path = ViewWithSeparators;
+			sourceTree = "<group>";
+		};
+		A1D0FA0B2513ED35008AC3F2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A1D0FA0C2513ED46008AC3F2 /* JeweledCountdownTimer.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A1D0FA0F2513EDB2008AC3F2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A1D0FA102513EDBE008AC3F2 /* TimeInterval+Time.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		B3576FDE2096B3A2B6F4B27A113A190C /* Targets Support Files */ = {
@@ -543,6 +565,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D0FA112513EDBE008AC3F2 /* TimeInterval+Time.swift in Sources */,
 				A13F6A592511158800C8FED3 /* UIView.swift in Sources */,
 				A13F6A552511155E00C8FED3 /* JeweledNibLoadable.swift in Sources */,
 				A1BDFC5D2510D44600B94383 /* JeweledStackScrollView.swift in Sources */,
@@ -553,6 +576,7 @@
 				A1BDFC5F2510E59200B94383 /* UIView+FirstResponding.swift in Sources */,
 				A1188B60250512CB00FACBE6 /* JeweledRepository.swift in Sources */,
 				A1188B68250512CB00FACBE6 /* JeweledIdentifiable.swift in Sources */,
+				A1D0FA0D2513ED46008AC3F2 /* JeweledCountdownTimer.swift in Sources */,
 				A1188B69250512CB00FACBE6 /* NSManagedObject+Create.swift in Sources */,
 				A13F6A582511158800C8FED3 /* UITableView.swift in Sources */,
 				A1188B62250512CB00FACBE6 /* JeweledErrorParser.swift in Sources */,
