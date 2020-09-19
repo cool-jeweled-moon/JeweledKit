@@ -12,7 +12,7 @@ public protocol JeweledCountdownTimerDelegate: class {
     func didFinishCountdown(_ timer: JeweledCountdownTimer)
 }
 
-public class JeweledCountdownTimer: NSObject {
+public class JeweledCountdownTimer {
     
     public struct Time {
         
@@ -45,7 +45,7 @@ public class JeweledCountdownTimer: NSObject {
         timer?.invalidate()
     }
     
-    public func runTimer(seconds: TimeInterval) {
+    public func fire(seconds: TimeInterval) {
         timer?.invalidate()
         
         self.seconds = round(seconds)

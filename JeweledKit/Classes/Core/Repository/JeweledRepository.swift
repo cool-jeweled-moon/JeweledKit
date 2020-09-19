@@ -8,17 +8,17 @@
 import Foundation
 
 public protocol JeweledRepositoryProtocol {
-    var requestLoader: JeweledRequestLoader { get }
-    var storage: JeweledStorage { get }
+    var requestLoader: JeweledRequestLoaderProtocol { get }
+    var storage: JeweledStorageProtocol { get }
 }
 
 public final class JeweledRepository: JeweledRepositoryProtocol {
     
-    public let requestLoader: JeweledRequestLoader
-    public let storage: JeweledStorage
+    public let requestLoader: JeweledRequestLoaderProtocol
+    public let storage: JeweledStorageProtocol
     
-    public init(requestLoader: JeweledRequestLoader,
-         storage: JeweledStorage) {
+    public init(requestLoader: JeweledRequestLoaderProtocol,
+                storage: JeweledStorageProtocol) {
         self.requestLoader = requestLoader
         self.storage = storage
     }
