@@ -32,7 +32,9 @@ class URLRequestFactory {
 extension Dictionary {
     
     var queryString: String {
-        var output: String = ""
+        guard !isEmpty else { return "" }
+        
+        var output: String = "?"
         
         for (key,value) in self {
             output +=  "\(key)=\(value)&"
