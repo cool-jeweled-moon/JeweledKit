@@ -53,8 +53,8 @@ where DataSource: JeweledPaginationTableViewDataSource {
         }
     }
     
-    init(dataSource: DataSource,
-         configuration: JeweledPaginationTableViewConfiguration = JeweledPaginationTableViewConfiguration()) {
+    public init(dataSource: DataSource,
+                configuration: JeweledPaginationTableViewConfiguration) {
         self.dataSource = dataSource
         self.configuration = configuration
         super.init(nibName: nil, bundle: nil)
