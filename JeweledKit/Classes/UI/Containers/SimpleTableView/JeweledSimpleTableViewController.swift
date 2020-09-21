@@ -11,15 +11,15 @@ private struct Constants {
     static let contentSizeKey = "contentSize"
 }
 
-public struct JeweledSimpleTableViewConfigurator {
-    var separatorColor = UITableView().separatorColor
-    var showTopSeparator = true
-    var showBottomSeparator = true
-    var leftSeparatorInset: CGFloat = 0
-    var rightSeparatorInset: CGFloat = 0
-    var rowHeight: CGFloat = UITableView.automaticDimension
-    var estimatedRowHeight: CGFloat = 100
-    var allowAnimations: Bool = true
+public struct JeweledSimpleTableViewConfiguration {
+    public var separatorColor = UITableView().separatorColor
+    public var showTopSeparator = true
+    public var showBottomSeparator = true
+    public var leftSeparatorInset: CGFloat = 0
+    public var rightSeparatorInset: CGFloat = 0
+    public var rowHeight: CGFloat = UITableView.automaticDimension
+    public var estimatedRowHeight: CGFloat = 100
+    public var allowAnimations: Bool = true
 }
 
 public class JeweledSimpleTableViewController<Cell>: UIViewController, UITableViewDataSource, UITableViewDelegate
@@ -31,7 +31,7 @@ where Cell: UITableViewCell, Cell: JeweledConfigurableView {
             tableView?.reloadData()
         }
     }
-    private var configurator = JeweledSimpleTableViewConfigurator()
+    private var configuration = JeweledSimpleTableViewConfiguration()
 
     public var selectActionBlock: ((_ datasourceIndex: Int) -> Void)? {
         didSet {
@@ -62,7 +62,7 @@ where Cell: UITableViewCell, Cell: JeweledConfigurableView {
         
         configureTableView()
         updateSelecionEnabled()
-        configure(with: self.configurator)
+        configure(with: configuration)
     }
     
     public override func viewWillAppear(_ animated: Bool) {
@@ -72,12 +72,12 @@ where Cell: UITableViewCell, Cell: JeweledConfigurableView {
 
     // MARK: - Public API
     
-    public func configure(with configurator: JeweledSimpleTableViewConfigurator) {
-        self.configurator = configurator
+    public func configure(with configuration: JeweledSimpleTableViewConfiguration) {
+        self.configuration = configuration
         
-        tableView?.separatorColor = self.configurator.separatorColor
-        viewWithSeparators?.showTopSeparator(show: configurator.showTopSeparator)
-        viewWithSeparators?.showBottomSeparator(show: configurator.showBottomSeparator)
+        tableView?.separatorColor = self.configuration.separatorColor
+        viewWithSeparators?.showTopSeparator(show: configuration.showTopSeparator)
+        viewWithSeparators?.showBottomSeparator(show: configuration.showBottomSeparator)
     }
     
     func setup(dataSource: [Cell.ConfigurationModel]) {
@@ -104,7 +104,7 @@ where Cell: UITableViewCell, Cell: JeweledConfigurableView {
     
     private func configureTableView() {
         // Auto-layout
-        tableView.configureAutomaticDimensions(estimatedRowHeight: configurator.estimatedRowHeight)
+        tableView.configureAutomaticDimensions(estimatedRowHeight: configuration.estimatedRowHeight)
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -119,8 +119,8 @@ where Cell: UITableViewCell, Cell: JeweledConfigurableView {
         // Hide bottom separator
         tableViewBottomConstraint?.constant = .pixelHeight
         
-        tableView.separatorInset.left = configurator.leftSeparatorInset
-        tableView.separatorInset.right = configurator.rightSeparatorInset
+        tableView.separatorInset.left = configuration.leftSeparatorInset
+        tableView.separatorInset.right = configuration.rightSeparatorInset
     }
     
     private func updateSelecionEnabled() {
@@ -137,13 +137,14 @@ where Cell: UITableViewCell, Cell: JeweledConfigurableView {
         let cell: Cell = tableView.dequeueReusableCell(forIndexPath: indexPath)
         
         cell.configure(with: dataSource[indexPath.row])
-        cell.separatorInset = UIEdgeInsets(top: 0, left: configurator.leftSeparatorInset, bottom: 0, right: configurator.rightSeparatorInset)
+        cell.separatorInset.left = configuration.leftSeparatorInset
+        cell.separatorInset.right = configuration.rightSeparatorInset
         
         return cell
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return configurator.rowHeight
+        return configuration.rowHeight
     }
     
     // MARK: - UITableViewDelegate

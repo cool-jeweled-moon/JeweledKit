@@ -20,6 +20,16 @@
 		A1188B68250512CB00FACBE6 /* JeweledIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B5C250512CB00FACBE6 /* JeweledIdentifiable.swift */; };
 		A1188B69250512CB00FACBE6 /* NSManagedObject+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B5D250512CB00FACBE6 /* NSManagedObject+Create.swift */; };
 		A1188B6A250512CB00FACBE6 /* JeweledPersistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B5E250512CB00FACBE6 /* JeweledPersistable.swift */; };
+		A138BA69251941C300AB7FFB /* JeweledLockActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138BA68251941C300AB7FFB /* JeweledLockActivityView.swift */; };
+		A138BA6E251941D100AB7FFB /* JeweledLockActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A138BA6D251941D100AB7FFB /* JeweledLockActivityView.xib */; };
+		A138BA78251943B000AB7FFB /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138BA77251943B000AB7FFB /* DispatchQueue.swift */; };
+		A138BA7F2519441C00AB7FFB /* JeweledPaginationTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138BA7D2519441C00AB7FFB /* JeweledPaginationTableView.swift */; };
+		A138BA802519441C00AB7FFB /* JeweledPaginationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138BA7E2519441C00AB7FFB /* JeweledPaginationTableViewController.swift */; };
+		A138BA93251945CE00AB7FFB /* JeweledLockLoaderDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138BA92251945CE00AB7FFB /* JeweledLockLoaderDisplayable.swift */; };
+		A138BA9A251949DE00AB7FFB /* JeweledDebouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138BA99251949DE00AB7FFB /* JeweledDebouncer.swift */; };
+		A138BA9F25194B9F00AB7FFB /* JeweledCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138BA9E25194B9F00AB7FFB /* JeweledCoordinator.swift */; };
+		A138BAA425195C8300AB7FFB /* UIViewController+LockLoaderDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138BAA325195C8300AB7FFB /* UIViewController+LockLoaderDisplayable.swift */; };
+		A138BAB725195F8B00AB7FFB /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138BAB625195F8B00AB7FFB /* UIViewController+Alert.swift */; };
 		A13F6A552511155E00C8FED3 /* JeweledNibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13F6A542511155E00C8FED3 /* JeweledNibLoadable.swift */; };
 		A13F6A582511158800C8FED3 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13F6A562511158700C8FED3 /* UITableView.swift */; };
 		A13F6A592511158800C8FED3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13F6A572511158800C8FED3 /* UIView.swift */; };
@@ -97,6 +107,16 @@
 		A1188B5C250512CB00FACBE6 /* JeweledIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeweledIdentifiable.swift; sourceTree = "<group>"; };
 		A1188B5D250512CB00FACBE6 /* NSManagedObject+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Create.swift"; sourceTree = "<group>"; };
 		A1188B5E250512CB00FACBE6 /* JeweledPersistable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeweledPersistable.swift; sourceTree = "<group>"; };
+		A138BA68251941C300AB7FFB /* JeweledLockActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeweledLockActivityView.swift; sourceTree = "<group>"; };
+		A138BA6D251941D100AB7FFB /* JeweledLockActivityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JeweledLockActivityView.xib; sourceTree = "<group>"; };
+		A138BA77251943B000AB7FFB /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
+		A138BA7D2519441C00AB7FFB /* JeweledPaginationTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeweledPaginationTableView.swift; sourceTree = "<group>"; };
+		A138BA7E2519441C00AB7FFB /* JeweledPaginationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeweledPaginationTableViewController.swift; sourceTree = "<group>"; };
+		A138BA92251945CE00AB7FFB /* JeweledLockLoaderDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeweledLockLoaderDisplayable.swift; sourceTree = "<group>"; };
+		A138BA99251949DE00AB7FFB /* JeweledDebouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeweledDebouncer.swift; sourceTree = "<group>"; };
+		A138BA9E25194B9F00AB7FFB /* JeweledCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeweledCoordinator.swift; sourceTree = "<group>"; };
+		A138BAA325195C8300AB7FFB /* UIViewController+LockLoaderDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+LockLoaderDisplayable.swift"; sourceTree = "<group>"; };
+		A138BAB625195F8B00AB7FFB /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
 		A13F6A542511155E00C8FED3 /* JeweledNibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeweledNibLoadable.swift; sourceTree = "<group>"; };
 		A13F6A562511158700C8FED3 /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		A13F6A572511158800C8FED3 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -236,6 +256,7 @@
 		A1188B4F250512CB00FACBE6 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A138BA76251943A800AB7FFB /* Extensions */,
 				A1D0FA0F2513EDB2008AC3F2 /* Constants */,
 				A1D0FA0B2513ED35008AC3F2 /* Utils */,
 				A1188B6C250512D400FACBE6 /* UI */,
@@ -304,6 +325,8 @@
 				A13F6A562511158700C8FED3 /* UITableView.swift */,
 				A13F6A572511158800C8FED3 /* UIView.swift */,
 				A1BDFC5E2510E59200B94383 /* UIView+FirstResponding.swift */,
+				A138BAA325195C8300AB7FFB /* UIViewController+LockLoaderDisplayable.swift */,
+				A138BAB625195F8B00AB7FFB /* UIViewController+Alert.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -313,13 +336,42 @@
 			children = (
 				A13F6A542511155E00C8FED3 /* JeweledNibLoadable.swift */,
 				A1BDFC632510F06400B94383 /* JeweledConfigurableView.swift */,
+				A138BA92251945CE00AB7FFB /* JeweledLockLoaderDisplayable.swift */,
+				A138BA9E25194B9F00AB7FFB /* JeweledCoordinator.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A138BA67251941B900AB7FFB /* LockActivityView */ = {
+			isa = PBXGroup;
+			children = (
+				A138BA68251941C300AB7FFB /* JeweledLockActivityView.swift */,
+				A138BA6D251941D100AB7FFB /* JeweledLockActivityView.xib */,
+			);
+			path = LockActivityView;
+			sourceTree = "<group>";
+		};
+		A138BA76251943A800AB7FFB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A138BA77251943B000AB7FFB /* DispatchQueue.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A138BA7C2519440A00AB7FFB /* PaginationTableView */ = {
+			isa = PBXGroup;
+			children = (
+				A138BA7E2519441C00AB7FFB /* JeweledPaginationTableViewController.swift */,
+				A138BA7D2519441C00AB7FFB /* JeweledPaginationTableView.swift */,
+			);
+			path = PaginationTableView;
 			sourceTree = "<group>";
 		};
 		A1BDFC592510CF3E00B94383 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A138BA67251941B900AB7FFB /* LockActivityView */,
 				A1BDFC5B2510D42E00B94383 /* StackScrollView */,
 				A1BDFC692510F3DB00B94383 /* ViewWithSeparators */,
 			);
@@ -329,6 +381,7 @@
 		A1BDFC5A2510CF4600B94383 /* Containers */ = {
 			isa = PBXGroup;
 			children = (
+				A138BA7C2519440A00AB7FFB /* PaginationTableView */,
 				A1BDFC602510EFC500B94383 /* SimpleTableView */,
 			);
 			path = Containers;
@@ -337,8 +390,8 @@
 		A1BDFC5B2510D42E00B94383 /* StackScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				A1BDFC672510F27400B94383 /* JeweledStackScrollView.xib */,
 				A1BDFC5C2510D44600B94383 /* JeweledStackScrollView.swift */,
+				A1BDFC672510F27400B94383 /* JeweledStackScrollView.xib */,
 			);
 			path = StackScrollView;
 			sourceTree = "<group>";
@@ -365,6 +418,7 @@
 			isa = PBXGroup;
 			children = (
 				A1D0FA0C2513ED46008AC3F2 /* JeweledCountdownTimer.swift */,
+				A138BA99251949DE00AB7FFB /* JeweledDebouncer.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -546,6 +600,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1BDFC662510F25300B94383 /* JeweledSimpleTableViewController.xib in Resources */,
+				A138BA6E251941D100AB7FFB /* JeweledLockActivityView.xib in Resources */,
 				A1BDFC682510F27400B94383 /* JeweledStackScrollView.xib in Resources */,
 				A1BDFC6D2510F43000B94383 /* JeweledViewWithSeparators.xib in Resources */,
 			);
@@ -567,20 +622,29 @@
 			files = (
 				A1D0FA112513EDBE008AC3F2 /* TimeInterval+Time.swift in Sources */,
 				A13F6A592511158800C8FED3 /* UIView.swift in Sources */,
+				A138BAB725195F8B00AB7FFB /* UIViewController+Alert.swift in Sources */,
 				A13F6A552511155E00C8FED3 /* JeweledNibLoadable.swift in Sources */,
 				A1BDFC5D2510D44600B94383 /* JeweledStackScrollView.swift in Sources */,
+				A138BA9A251949DE00AB7FFB /* JeweledDebouncer.swift in Sources */,
 				A1188B61250512CB00FACBE6 /* JeweledNetworkLogFormatter.swift in Sources */,
 				A1188B6A250512CB00FACBE6 /* JeweledPersistable.swift in Sources */,
+				A138BA9F25194B9F00AB7FFB /* JeweledCoordinator.swift in Sources */,
+				A138BA7F2519441C00AB7FFB /* JeweledPaginationTableView.swift in Sources */,
+				A138BA93251945CE00AB7FFB /* JeweledLockLoaderDisplayable.swift in Sources */,
 				A1188B63250512CB00FACBE6 /* JeweledRequest.swift in Sources */,
 				A1188B67250512CB00FACBE6 /* JeweledStorage.swift in Sources */,
 				A1BDFC5F2510E59200B94383 /* UIView+FirstResponding.swift in Sources */,
 				A1188B60250512CB00FACBE6 /* JeweledRepository.swift in Sources */,
+				A138BAA425195C8300AB7FFB /* UIViewController+LockLoaderDisplayable.swift in Sources */,
 				A1188B68250512CB00FACBE6 /* JeweledIdentifiable.swift in Sources */,
+				A138BA78251943B000AB7FFB /* DispatchQueue.swift in Sources */,
 				A1D0FA0D2513ED46008AC3F2 /* JeweledCountdownTimer.swift in Sources */,
 				A1188B69250512CB00FACBE6 /* NSManagedObject+Create.swift in Sources */,
 				A13F6A582511158800C8FED3 /* UITableView.swift in Sources */,
 				A1188B62250512CB00FACBE6 /* JeweledErrorParser.swift in Sources */,
+				A138BA69251941C300AB7FFB /* JeweledLockActivityView.swift in Sources */,
 				A1188B64250512CB00FACBE6 /* URLRequestFactory.swift in Sources */,
+				A138BA802519441C00AB7FFB /* JeweledPaginationTableViewController.swift in Sources */,
 				A1BDFC642510F06400B94383 /* JeweledConfigurableView.swift in Sources */,
 				A1BDFC622510EFE400B94383 /* JeweledSimpleTableViewController.swift in Sources */,
 				A1188B66250512CB00FACBE6 /* NSObject+ClassName.swift in Sources */,

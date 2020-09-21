@@ -19,7 +19,7 @@ public protocol JeweledRequest {
     var timeoutInterval: TimeInterval { get }
     var baseUrl: String { get }
     var path: String { get }
-    var parameters: [String: Any] { get }
+    var parameters: [String: String?] { get }
     var headerFields: [String: String] { get }
     var body: Data? { get }
     var payloadKey: String? { get }

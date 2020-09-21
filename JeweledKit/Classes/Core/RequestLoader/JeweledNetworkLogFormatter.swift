@@ -10,7 +10,7 @@ import Foundation
 class JeweledNetworkLogFormatter {
     
     /// Форматированный лог для сетевого запроса
-    static func formattedLog(request: URLRequest, parameters: [String: Any]?, data: Data?, error: NSError?) -> String {
+    static func formattedLog(request: URLRequest, parameters: [String: String?], data: Data?, error: NSError?) -> String {
         
         var resultString = "\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n"
                               
@@ -18,7 +18,7 @@ class JeweledNetworkLogFormatter {
         resultString += "\(resultSymbol) Request:\n"
         resultString += request.url?.absoluteString ?? ""
         
-        if let parameters = parameters, !parameters.isEmpty,
+        if !parameters.isEmpty,
             let formattedParameters = format(json: parameters) {
             resultString += "\n\n🌈 Parameters:\n"
             resultString += formattedParameters
