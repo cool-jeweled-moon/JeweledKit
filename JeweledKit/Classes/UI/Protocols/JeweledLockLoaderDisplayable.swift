@@ -48,19 +48,19 @@ extension JeweledLockLoaderDisplayable where Self: UIViewController {
     }
     
     public func hideLockActivityView() {
-        guard let loader = view.subviews.first(where: { $0.tag == Constants.lockActivityViewTag }) else { return }
+        guard let lockActivityView = findLockActivityView() else { return }
         
         if Thread.isMainThread {
-            loader.removeFromSuperview()
+            lockActivityView.removeFromSuperview()
         } else {
             DispatchQueue.main.async {
-                loader.removeFromSuperview()
+                lockActivityView.removeFromSuperview()
             }
         }
     }
     
     private func showLockActivityView(in view: UIView, text: String? = nil, isMessage: Bool = false) {
-        let lockActivityView = JeweledLockActivityView.fromNib()
+        let lockActivityView = findLockActivityView() ?? JeweledLockActivityView.fromNib()
         lockActivityView.tag = Constants.lockActivityViewTag
         
         if Thread.isMainThread {
@@ -70,5 +70,11 @@ extension JeweledLockLoaderDisplayable where Self: UIViewController {
                 lockActivityView.show(in: view, text: text, isMessage: isMessage)
             }
         }
+    }
+    
+    private func findLockActivityView() -> JeweledLockActivityView? {
+        return view
+            .subviews
+            .first(where: { $0.tag == Constants.lockActivityViewTag }) as? JeweledLockActivityView
     }
 }

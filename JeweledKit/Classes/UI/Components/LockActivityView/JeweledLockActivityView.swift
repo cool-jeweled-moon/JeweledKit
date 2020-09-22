@@ -15,6 +15,7 @@ public final class JeweledLockActivityView: UIView {
     public override func awakeFromNib() {
         super.awakeFromNib()
         
+        isHidden = true
         if #available(iOS 13.0, *) {
             activityIndicator.style = .large
         }
