@@ -1,5 +1,5 @@
 PODS:
-  - JeweledKit (0.1.0)
+  - JeweledKit (0.1.14)
 
 DEPENDENCIES:
   - JeweledKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JeweledKit: 1869823c41104e437e948f1d717b7b7a1d54623d
+  JeweledKit: dc20b3520b32812e48ab618e4df1681cf7e3c55f
 
 PODFILE CHECKSUM: 713a57df9cb1ea7ddbb915a66f28df1b68e5ac64
 

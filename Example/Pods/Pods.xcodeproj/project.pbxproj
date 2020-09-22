@@ -7,171 +7,197 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		36AE822F291FD36660231B194631EA83 /* Pods-JeweledKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1601233F0B04BE5B0F93B6AF31B8E05C /* Pods-JeweledKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		85E2D7D9B9B818A9562585A589A3C2CA /* Pods-JeweledKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 739FF18478704120BD51F25339EED595 /* Pods-JeweledKit_Example-dummy.m */; };
-		A1188B60250512CB00FACBE6 /* JeweledRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B52250512CB00FACBE6 /* JeweledRepository.swift */; };
-		A1188B61250512CB00FACBE6 /* JeweledNetworkLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B54250512CB00FACBE6 /* JeweledNetworkLogFormatter.swift */; };
-		A1188B62250512CB00FACBE6 /* JeweledErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B55250512CB00FACBE6 /* JeweledErrorParser.swift */; };
-		A1188B63250512CB00FACBE6 /* JeweledRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B56250512CB00FACBE6 /* JeweledRequest.swift */; };
-		A1188B64250512CB00FACBE6 /* URLRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B57250512CB00FACBE6 /* URLRequestFactory.swift */; };
-		A1188B65250512CB00FACBE6 /* JeweledRequestLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B58250512CB00FACBE6 /* JeweledRequestLoader.swift */; };
-		A1188B66250512CB00FACBE6 /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B5A250512CB00FACBE6 /* NSObject+ClassName.swift */; };
-		A1188B67250512CB00FACBE6 /* JeweledStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B5B250512CB00FACBE6 /* JeweledStorage.swift */; };
-		A1188B68250512CB00FACBE6 /* JeweledIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B5C250512CB00FACBE6 /* JeweledIdentifiable.swift */; };
-		A1188B69250512CB00FACBE6 /* NSManagedObject+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B5D250512CB00FACBE6 /* NSManagedObject+Create.swift */; };
-		A1188B6A250512CB00FACBE6 /* JeweledPersistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1188B5E250512CB00FACBE6 /* JeweledPersistable.swift */; };
-		A138BA69251941C300AB7FFB /* JeweledLockActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138BA68251941C300AB7FFB /* JeweledLockActivityView.swift */; };
-		A138BA6E251941D100AB7FFB /* JeweledLockActivityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A138BA6D251941D100AB7FFB /* JeweledLockActivityView.xib */; };
-		A138BA78251943B000AB7FFB /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138BA77251943B000AB7FFB /* DispatchQueue.swift */; };
-		A138BA7F2519441C00AB7FFB /* JeweledPaginationTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138BA7D2519441C00AB7FFB /* JeweledPaginationTableView.swift */; };
-		A138BA802519441C00AB7FFB /* JeweledPaginationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138BA7E2519441C00AB7FFB /* JeweledPaginationTableViewController.swift */; };
-		A138BA93251945CE00AB7FFB /* JeweledLockLoaderDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138BA92251945CE00AB7FFB /* JeweledLockLoaderDisplayable.swift */; };
-		A138BA9A251949DE00AB7FFB /* JeweledDebouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138BA99251949DE00AB7FFB /* JeweledDebouncer.swift */; };
-		A138BA9F25194B9F00AB7FFB /* JeweledCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138BA9E25194B9F00AB7FFB /* JeweledCoordinator.swift */; };
-		A138BAA425195C8300AB7FFB /* UIViewController+LockLoaderDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138BAA325195C8300AB7FFB /* UIViewController+LockLoaderDisplayable.swift */; };
-		A138BAB725195F8B00AB7FFB /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A138BAB625195F8B00AB7FFB /* UIViewController+Alert.swift */; };
-		A13F6A552511155E00C8FED3 /* JeweledNibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13F6A542511155E00C8FED3 /* JeweledNibLoadable.swift */; };
-		A13F6A582511158800C8FED3 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13F6A562511158700C8FED3 /* UITableView.swift */; };
-		A13F6A592511158800C8FED3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13F6A572511158800C8FED3 /* UIView.swift */; };
-		A1BDFC5D2510D44600B94383 /* JeweledStackScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BDFC5C2510D44600B94383 /* JeweledStackScrollView.swift */; };
-		A1BDFC5F2510E59200B94383 /* UIView+FirstResponding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BDFC5E2510E59200B94383 /* UIView+FirstResponding.swift */; };
-		A1BDFC622510EFE400B94383 /* JeweledSimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BDFC612510EFE400B94383 /* JeweledSimpleTableViewController.swift */; };
-		A1BDFC642510F06400B94383 /* JeweledConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BDFC632510F06400B94383 /* JeweledConfigurableView.swift */; };
-		A1BDFC662510F25300B94383 /* JeweledSimpleTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BDFC652510F25300B94383 /* JeweledSimpleTableViewController.xib */; };
-		A1BDFC682510F27400B94383 /* JeweledStackScrollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BDFC672510F27400B94383 /* JeweledStackScrollView.xib */; };
-		A1BDFC6B2510F3FD00B94383 /* JeweledViewWithSeparators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BDFC6A2510F3FD00B94383 /* JeweledViewWithSeparators.swift */; };
-		A1BDFC6D2510F43000B94383 /* JeweledViewWithSeparators.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1BDFC6C2510F43000B94383 /* JeweledViewWithSeparators.xib */; };
-		A1D0FA0D2513ED46008AC3F2 /* JeweledCountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D0FA0C2513ED46008AC3F2 /* JeweledCountdownTimer.swift */; };
-		A1D0FA112513EDBE008AC3F2 /* TimeInterval+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D0FA102513EDBE008AC3F2 /* TimeInterval+Time.swift */; };
-		A819EC9C3996EFB3E17519AB91F687A2 /* Pods-JeweledKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F28DDA399A6D3EC44A6D9C6D7A20F9E4 /* Pods-JeweledKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B069C113311248EB908DFE643731D043 /* Pods-JeweledKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81255491825FD497967FC41A8A5EC618 /* Pods-JeweledKit_Tests-dummy.m */; };
-		E0A72D23CC30CBD87757A92C6E4F89BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		E35D4605828FBD7E84A439AFD4042123 /* JeweledKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272E73D5FA40EADC83190C581E818018 /* JeweledKit-dummy.m */; };
-		FB1BEA8F193D0E78FF4EAE24C1447640 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		FD96FA9C60FF157D8D3376F72A99546A /* JeweledKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C5AE91BD42A44002E4D38F25A38305B /* JeweledKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FF9A626817DEB53F4EEBD2A2D978A6C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		00920EF40B8746EFC76F0759BF3E426F /* TimeInterval+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA60D186DCE2253CC6E7FD567DF4D39E /* TimeInterval+Time.swift */; };
+		01EBE6CC0561003F36BEF5928510195B /* JeweledLockLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A68E5EA7C7BA84B3B4C3BF46E3AD125 /* JeweledLockLoaderView.swift */; };
+		0AD6CEFE61D395F239648676E7474E7E /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB55DC3DCA7C7AB3B341D80BAC835828 /* UIViewController+Alert.swift */; };
+		0B28DE6974F7E884E24BA4F4DFE2E290 /* Pods-JeweledKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F28DDA399A6D3EC44A6D9C6D7A20F9E4 /* Pods-JeweledKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		190F10C19BD54A45335B48A62E065CCF /* JeweledErrorParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66AA707109FC7F8319B42B631846FF0 /* JeweledErrorParser.swift */; };
+		19D1EAF8EFF9B857254B4F127A932D53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		20ADD0CD8F46902E29068812EFF7B709 /* JeweledStackScrollView.xib in Sources */ = {isa = PBXBuildFile; fileRef = D85576A58C4043B8FCDA09FE7CE5C426 /* JeweledStackScrollView.xib */; };
+		25852995D6285C5655CCE0DAF1910390 /* JeweledViewWithSeparators.xib in Sources */ = {isa = PBXBuildFile; fileRef = C851DE4EA5E675AA3BE3FDB71C2A1716 /* JeweledViewWithSeparators.xib */; };
+		31420C3E9DA6CFE64B8E4AC8EC428BD5 /* JeweledRequestLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9E2A0E0A9FBF1ED0E8DE82809D499A /* JeweledRequestLoader.swift */; };
+		31741036020F0DBB82C032E84B313374 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		38819D3B1E31B07741AA34C681BC7D74 /* JeweledCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10000B927AB77552C5615E2493FEFD53 /* JeweledCoordinator.swift */; };
+		38A8B1814500168C65FFBD45ED334EB2 /* JeweledNetworkLogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B94C3A768DAC6D3A28154A247E581930 /* JeweledNetworkLogFormatter.swift */; };
+		414F745F14C66131153088AE325DD398 /* Pods-JeweledKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 81255491825FD497967FC41A8A5EC618 /* Pods-JeweledKit_Tests-dummy.m */; };
+		45AA8359DACB4F6E11B54466D355A74B /* JeweledSimpleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688DD72B36067B96FCF3E33496330D06 /* JeweledSimpleTableViewController.swift */; };
+		46AA57E5D15D1D263DAF5886D7C25296 /* JeweledViewWithSeparators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3B969C9222149A06868A1C1367CEB4 /* JeweledViewWithSeparators.swift */; };
+		4E6EDFD290783C76AE6DB851AAA589E3 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B481ADB82F173133F7BBE5BE053296 /* UIView.swift */; };
+		501B2E6B1F972F973381D871FDAEF118 /* NSManagedObject+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9315D9A15C1565B36CB7CDC3C957AEC2 /* NSManagedObject+Create.swift */; };
+		524ED0A7F7D8607D141915AAFF73C430 /* URLRequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4D165C2657E1754FFBEAB7D514C433 /* URLRequestFactory.swift */; };
+		5687974E6B8B58C2E08E4044F2A315A5 /* JeweledTableViewContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476390DBBC10FA4A8A1FFDC3765EB129 /* JeweledTableViewContainerCell.swift */; };
+		608843E4D0A5E7EC7763A45DC981E1D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		85DAF485C135B959C3F43912F1930734 /* JeweledPaginationTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95ECF20BC3854EE3C30F49896585162 /* JeweledPaginationTableView.swift */; };
+		8B281EC10C8D2F497F8000649DB96D65 /* JeweledPersistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13DB435414A4972164E36F09861287F9 /* JeweledPersistable.swift */; };
+		915153F861EF98962CD648DCCA3182F3 /* JeweledRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B974847563A67C0725910DA2650B3C23 /* JeweledRepository.swift */; };
+		9205453CC13ACA87F145240E77FACFF1 /* JeweledKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 195C9C76EBE5F836CEA8998105E48026 /* JeweledKit-dummy.m */; };
+		9800171C56B616450582CB919845EBBA /* JeweledSimpleTableViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = FD52F99C22DDC2116846A9493DAADAA3 /* JeweledSimpleTableViewController.xib */; };
+		986439457631B1917038ADB2F1D7F595 /* JeweledDebouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524FEE1D3CDAF2541FB1F9C360A94E2 /* JeweledDebouncer.swift */; };
+		99BA8556BA35BF723ED49404F9295BC2 /* JeweledStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C642889B989C55EC02A665FEB018F /* JeweledStorage.swift */; };
+		9DF0814D3FDDD68D078187A56D2A579B /* JeweledCountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA27C0EC4455289A253771A0ED7BA16 /* JeweledCountdownTimer.swift */; };
+		A309A16B641774AA6B10C67BE99C11AB /* Pods-JeweledKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1601233F0B04BE5B0F93B6AF31B8E05C /* Pods-JeweledKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACEFC71774B7448FD43938632CA33564 /* JeweledKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 553AB6409A1DF07D04101C9C5F589DC7 /* JeweledKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2B25064D04B7B1E734200D68D1AB419 /* JeweledIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36924AEA242C436B1A4ABDF37BF589B5 /* JeweledIdentifiable.swift */; };
+		B959A694FDB5C0F7576B05EBD1632922 /* JeweledStackScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3DF07E3DE22D623C306DC9A02FE46D /* JeweledStackScrollView.swift */; };
+		BB4A89D2170D703662B8E5FB073141BA /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D042B5A063C01B796607EDC29E654CD /* UITableView.swift */; };
+		BE9DA735598258695C91B3656CD28E45 /* JeweledRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510659198991CACC4E7A327264A95C27 /* JeweledRequest.swift */; };
+		C61EAEE6F79ECE27E220B2078B088787 /* JeweledConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92204B916203CEE300D6FEAF7FBF599 /* JeweledConfigurableView.swift */; };
+		D5A35490456A179E28CAAD4305A6B1E0 /* UIView+FirstResponding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AA8DB117BEF34892B1FE4C5A1E93D02 /* UIView+FirstResponding.swift */; };
+		D6A0A0681D224B8802B81B85441219B7 /* NSObject+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755CC6FDBA2B2D678541645A513FA440 /* NSObject+ClassName.swift */; };
+		E19AD7B9457AA4807EB9E79EB898A6AC /* JeweledLockLoaderView.xib in Sources */ = {isa = PBXBuildFile; fileRef = 4691CAE69B9D191B7291E372993F3EE8 /* JeweledLockLoaderView.xib */; };
+		E2C13F9CAC66D68F27BF253620CD3EFD /* JeweledReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D73069E467B332AB127884B69A41042 /* JeweledReusableView.swift */; };
+		E85FFB8437A5394C6EDA65ED2F4922A0 /* JeweledPaginationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C772581CEB45B7F2F6049340FD9CE1 /* JeweledPaginationTableViewController.swift */; };
+		F1E4F8BB246B092087901C33AA72BBD8 /* JeweledNibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A48E22B069B8880AEC74395AF2CC2B9 /* JeweledNibLoadable.swift */; };
+		F2FE2194C89590CFFAAAC8FE441300C3 /* Pods-JeweledKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 739FF18478704120BD51F25339EED595 /* Pods-JeweledKit_Example-dummy.m */; };
+		F477B6AB6CAAF43C4AED0E3641C80A2D /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7FF8444FF016889D8C80C2437E5D26 /* DispatchQueue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5DF40F94806AD653800FA34633D38205 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 663721CBE97EBB74ED7AD91C3201836C;
-			remoteInfo = JeweledKit;
-		};
-		D0F66EBC3073B91F216A3B3C0056CA85 /* PBXContainerItemProxy */ = {
+		3995D9977E4E716E2D0CC7B391B9D814 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 71ED25649E0BFCF519F3808F4EE5407D;
 			remoteInfo = "Pods-JeweledKit_Example";
 		};
+		9EC007BD76D0FFBA9563AF125FBF14B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 663721CBE97EBB74ED7AD91C3201836C;
+			remoteInfo = JeweledKit;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09F94DBC19C101DA9D170CE902E03E30 /* JeweledKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JeweledKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		0C9E2A0E0A9FBF1ED0E8DE82809D499A /* JeweledRequestLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledRequestLoader.swift; sourceTree = "<group>"; };
 		0CC21ED012802D7FE302E4A6930A8185 /* Pods-JeweledKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JeweledKit_Tests.modulemap"; sourceTree = "<group>"; };
 		0CDB9D4ACB1BD2CEDDAB8426460E2BC2 /* Pods-JeweledKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JeweledKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		0E7565906D5183AD8D07CF6B8D69B204 /* Pods-JeweledKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JeweledKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		11780B38AB50F5712A7A48FA27E6BFAF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		10000B927AB77552C5615E2493FEFD53 /* JeweledCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledCoordinator.swift; sourceTree = "<group>"; };
 		12779F5768B6BDC9CB5A9695686329F3 /* Pods-JeweledKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JeweledKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		13DB435414A4972164E36F09861287F9 /* JeweledPersistable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledPersistable.swift; sourceTree = "<group>"; };
 		1601233F0B04BE5B0F93B6AF31B8E05C /* Pods-JeweledKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JeweledKit_Tests-umbrella.h"; sourceTree = "<group>"; };
-		272E73D5FA40EADC83190C581E818018 /* JeweledKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JeweledKit-dummy.m"; sourceTree = "<group>"; };
-		2B110CA026FFEEEB56479384873C6159 /* JeweledKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JeweledKit-Info.plist"; sourceTree = "<group>"; };
+		195C9C76EBE5F836CEA8998105E48026 /* JeweledKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JeweledKit-dummy.m"; sourceTree = "<group>"; };
+		1D73069E467B332AB127884B69A41042 /* JeweledReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledReusableView.swift; sourceTree = "<group>"; };
+		1E4D165C2657E1754FFBEAB7D514C433 /* URLRequestFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLRequestFactory.swift; sourceTree = "<group>"; };
+		1EA27C0EC4455289A253771A0ED7BA16 /* JeweledCountdownTimer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledCountdownTimer.swift; sourceTree = "<group>"; };
+		1EA9226CA6329518DE1939263EDDF287 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		20FDA9CC1AAA42D4B2B2F32BAB51C09E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		32D6140562BA7B4B8B4628F8FAEA80A1 /* Pods-JeweledKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JeweledKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		36924AEA242C436B1A4ABDF37BF589B5 /* JeweledIdentifiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledIdentifiable.swift; sourceTree = "<group>"; };
 		3F189ADFDFF7CDBD0FE52222CFB85DAF /* Pods-JeweledKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JeweledKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		4691CAE69B9D191B7291E372993F3EE8 /* JeweledLockLoaderView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = JeweledLockLoaderView.xib; sourceTree = "<group>"; };
+		476390DBBC10FA4A8A1FFDC3765EB129 /* JeweledTableViewContainerCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledTableViewContainerCell.swift; sourceTree = "<group>"; };
+		510659198991CACC4E7A327264A95C27 /* JeweledRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledRequest.swift; sourceTree = "<group>"; };
 		543B964870F62AA1B2885A4E793ADC91 /* Pods-JeweledKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JeweledKit_Tests-Info.plist"; sourceTree = "<group>"; };
-		5C5AE91BD42A44002E4D38F25A38305B /* JeweledKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JeweledKit-umbrella.h"; sourceTree = "<group>"; };
+		553AB6409A1DF07D04101C9C5F589DC7 /* JeweledKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JeweledKit-umbrella.h"; sourceTree = "<group>"; };
+		55B481ADB82F173133F7BBE5BE053296 /* UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		5A68E5EA7C7BA84B3B4C3BF46E3AD125 /* JeweledLockLoaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledLockLoaderView.swift; sourceTree = "<group>"; };
+		5D042B5A063C01B796607EDC29E654CD /* UITableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		62F31A006A217629126FA16EA2DBC1D3 /* Pods-JeweledKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JeweledKit_Example-Info.plist"; sourceTree = "<group>"; };
-		6B18D1EBB1DDE6A4C929B115ED7C9CAE /* JeweledKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JeweledKit.modulemap; sourceTree = "<group>"; };
+		63C772581CEB45B7F2F6049340FD9CE1 /* JeweledPaginationTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledPaginationTableViewController.swift; sourceTree = "<group>"; };
+		688DD72B36067B96FCF3E33496330D06 /* JeweledSimpleTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledSimpleTableViewController.swift; sourceTree = "<group>"; };
+		6AA8DB117BEF34892B1FE4C5A1E93D02 /* UIView+FirstResponding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+FirstResponding.swift"; sourceTree = "<group>"; };
 		739FF18478704120BD51F25339EED595 /* Pods-JeweledKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JeweledKit_Example-dummy.m"; sourceTree = "<group>"; };
-		745222777D70BB6EAAFE28FEEB2FAEDE /* JeweledKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JeweledKit-prefix.pch"; sourceTree = "<group>"; };
-		76B8E24E7EB89903D854E2C63BEA2CF1 /* Pods_JeweledKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JeweledKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		776C35D5753FC4530F30FCBEFF30A7BA /* JeweledKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JeweledKit.debug.xcconfig; sourceTree = "<group>"; };
-		7F544F450C1D47C8F9D94384D9D68223 /* Pods_JeweledKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JeweledKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		755CC6FDBA2B2D678541645A513FA440 /* NSObject+ClassName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
+		76B8E24E7EB89903D854E2C63BEA2CF1 /* Pods_JeweledKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JeweledKit_Tests.framework; path = "Pods-JeweledKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A48E22B069B8880AEC74395AF2CC2B9 /* JeweledNibLoadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledNibLoadable.swift; sourceTree = "<group>"; };
+		7F544F450C1D47C8F9D94384D9D68223 /* Pods_JeweledKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JeweledKit_Example.framework; path = "Pods-JeweledKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80ADDDE35FA78455F2E4B0F0E03BAF67 /* Pods-JeweledKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JeweledKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		81255491825FD497967FC41A8A5EC618 /* Pods-JeweledKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JeweledKit_Tests-dummy.m"; sourceTree = "<group>"; };
-		847742D6917981A5051499E36DD1BB5C /* JeweledKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JeweledKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		847742D6917981A5051499E36DD1BB5C /* JeweledKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JeweledKit.framework; path = JeweledKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8917AA959E0AB9E6609251D617532D38 /* JeweledKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JeweledKit-prefix.pch"; sourceTree = "<group>"; };
+		9315D9A15C1565B36CB7CDC3C957AEC2 /* NSManagedObject+Create.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Create.swift"; sourceTree = "<group>"; };
+		9448AF2F9BC32DBE518FE83794924B22 /* JeweledKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JeweledKit.modulemap; sourceTree = "<group>"; };
 		9790B0624BD2C8940A53B4C4F2CFCF57 /* Pods-JeweledKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JeweledKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9F4C23197EBA5BF8F24800BBE0ABD923 /* JeweledKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = JeweledKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1188B52250512CB00FACBE6 /* JeweledRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeweledRepository.swift; sourceTree = "<group>"; };
-		A1188B54250512CB00FACBE6 /* JeweledNetworkLogFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeweledNetworkLogFormatter.swift; sourceTree = "<group>"; };
-		A1188B55250512CB00FACBE6 /* JeweledErrorParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeweledErrorParser.swift; sourceTree = "<group>"; };
-		A1188B56250512CB00FACBE6 /* JeweledRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeweledRequest.swift; sourceTree = "<group>"; };
-		A1188B57250512CB00FACBE6 /* URLRequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequestFactory.swift; sourceTree = "<group>"; };
-		A1188B58250512CB00FACBE6 /* JeweledRequestLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeweledRequestLoader.swift; sourceTree = "<group>"; };
-		A1188B5A250512CB00FACBE6 /* NSObject+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
-		A1188B5B250512CB00FACBE6 /* JeweledStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeweledStorage.swift; sourceTree = "<group>"; };
-		A1188B5C250512CB00FACBE6 /* JeweledIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeweledIdentifiable.swift; sourceTree = "<group>"; };
-		A1188B5D250512CB00FACBE6 /* NSManagedObject+Create.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Create.swift"; sourceTree = "<group>"; };
-		A1188B5E250512CB00FACBE6 /* JeweledPersistable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeweledPersistable.swift; sourceTree = "<group>"; };
-		A138BA68251941C300AB7FFB /* JeweledLockActivityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeweledLockActivityView.swift; sourceTree = "<group>"; };
-		A138BA6D251941D100AB7FFB /* JeweledLockActivityView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JeweledLockActivityView.xib; sourceTree = "<group>"; };
-		A138BA77251943B000AB7FFB /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
-		A138BA7D2519441C00AB7FFB /* JeweledPaginationTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeweledPaginationTableView.swift; sourceTree = "<group>"; };
-		A138BA7E2519441C00AB7FFB /* JeweledPaginationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeweledPaginationTableViewController.swift; sourceTree = "<group>"; };
-		A138BA92251945CE00AB7FFB /* JeweledLockLoaderDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeweledLockLoaderDisplayable.swift; sourceTree = "<group>"; };
-		A138BA99251949DE00AB7FFB /* JeweledDebouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeweledDebouncer.swift; sourceTree = "<group>"; };
-		A138BA9E25194B9F00AB7FFB /* JeweledCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeweledCoordinator.swift; sourceTree = "<group>"; };
-		A138BAA325195C8300AB7FFB /* UIViewController+LockLoaderDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+LockLoaderDisplayable.swift"; sourceTree = "<group>"; };
-		A138BAB625195F8B00AB7FFB /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
-		A13F6A542511155E00C8FED3 /* JeweledNibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JeweledNibLoadable.swift; sourceTree = "<group>"; };
-		A13F6A562511158700C8FED3 /* UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
-		A13F6A572511158800C8FED3 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		A1BDFC5C2510D44600B94383 /* JeweledStackScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeweledStackScrollView.swift; sourceTree = "<group>"; };
-		A1BDFC5E2510E59200B94383 /* UIView+FirstResponding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+FirstResponding.swift"; sourceTree = "<group>"; };
-		A1BDFC612510EFE400B94383 /* JeweledSimpleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeweledSimpleTableViewController.swift; sourceTree = "<group>"; };
-		A1BDFC632510F06400B94383 /* JeweledConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeweledConfigurableView.swift; sourceTree = "<group>"; };
-		A1BDFC652510F25300B94383 /* JeweledSimpleTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JeweledSimpleTableViewController.xib; sourceTree = "<group>"; };
-		A1BDFC672510F27400B94383 /* JeweledStackScrollView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JeweledStackScrollView.xib; sourceTree = "<group>"; };
-		A1BDFC6A2510F3FD00B94383 /* JeweledViewWithSeparators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeweledViewWithSeparators.swift; sourceTree = "<group>"; };
-		A1BDFC6C2510F43000B94383 /* JeweledViewWithSeparators.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JeweledViewWithSeparators.xib; sourceTree = "<group>"; };
-		A1D0FA0C2513ED46008AC3F2 /* JeweledCountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeweledCountdownTimer.swift; sourceTree = "<group>"; };
-		A1D0FA102513EDBE008AC3F2 /* TimeInterval+Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Time.swift"; sourceTree = "<group>"; };
+		9C7FF8444FF016889D8C80C2437E5D26 /* DispatchQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F3DF07E3DE22D623C306DC9A02FE46D /* JeweledStackScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledStackScrollView.swift; sourceTree = "<group>"; };
+		A524FEE1D3CDAF2541FB1F9C360A94E2 /* JeweledDebouncer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledDebouncer.swift; sourceTree = "<group>"; };
+		A7C9A20E1C7DAE1F13669B9AE8F19733 /* JeweledKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JeweledKit-Info.plist"; sourceTree = "<group>"; };
+		A92204B916203CEE300D6FEAF7FBF599 /* JeweledConfigurableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledConfigurableView.swift; sourceTree = "<group>"; };
+		B94C3A768DAC6D3A28154A247E581930 /* JeweledNetworkLogFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledNetworkLogFormatter.swift; sourceTree = "<group>"; };
+		B95ECF20BC3854EE3C30F49896585162 /* JeweledPaginationTableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledPaginationTableView.swift; sourceTree = "<group>"; };
+		B974847563A67C0725910DA2650B3C23 /* JeweledRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledRepository.swift; sourceTree = "<group>"; };
+		BB55DC3DCA7C7AB3B341D80BAC835828 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		BD3B969C9222149A06868A1C1367CEB4 /* JeweledViewWithSeparators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledViewWithSeparators.swift; sourceTree = "<group>"; };
 		C149DB6E65C83E814206EAF31ACD5A20 /* Pods-JeweledKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JeweledKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C851DE4EA5E675AA3BE3FDB71C2A1716 /* JeweledViewWithSeparators.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = JeweledViewWithSeparators.xib; sourceTree = "<group>"; };
 		C9D8DC76B29A6C0E47F49BD031EFDA86 /* Pods-JeweledKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JeweledKit_Example.modulemap"; sourceTree = "<group>"; };
-		D2BC0BD323CA2244825446C4BC367011 /* JeweledKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JeweledKit.release.xcconfig; sourceTree = "<group>"; };
+		D66AA707109FC7F8319B42B631846FF0 /* JeweledErrorParser.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledErrorParser.swift; sourceTree = "<group>"; };
+		D85576A58C4043B8FCDA09FE7CE5C426 /* JeweledStackScrollView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = JeweledStackScrollView.xib; sourceTree = "<group>"; };
+		DA60D186DCE2253CC6E7FD567DF4D39E /* TimeInterval+Time.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Time.swift"; sourceTree = "<group>"; };
 		F28DDA399A6D3EC44A6D9C6D7A20F9E4 /* Pods-JeweledKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JeweledKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		F555636D34B729A29F3036CABEC54593 /* JeweledKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JeweledKit.debug.xcconfig; sourceTree = "<group>"; };
 		F7929C30E8F5F3D0A6294890207A17FB /* Pods-JeweledKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JeweledKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FBCADDA91B794CE05E5C2B255D3C8A4A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F7C33DAF02A53557999B47EF0420EAC6 /* JeweledKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JeweledKit.release.xcconfig; sourceTree = "<group>"; };
+		FB3C642889B989C55EC02A665FEB018F /* JeweledStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledStorage.swift; sourceTree = "<group>"; };
+		FD52F99C22DDC2116846A9493DAADAA3 /* JeweledSimpleTableViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = JeweledSimpleTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0FB88CCB3857FDF7E689EEF93778FECC /* Frameworks */ = {
+		08E594B13FE6448BBAADFCF7CC4C2B84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0A72D23CC30CBD87757A92C6E4F89BD /* Foundation.framework in Frameworks */,
+				19D1EAF8EFF9B857254B4F127A932D53 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E86625EEE3344A7FDF1F05374F04D1AE /* Frameworks */ = {
+		820FB2FA61DE02CD77A40F362F387B84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB1BEA8F193D0E78FF4EAE24C1447640 /* Foundation.framework in Frameworks */,
+				31741036020F0DBB82C032E84B313374 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E93FB8C14E04AE74B4DE400B74F540ED /* Frameworks */ = {
+		B31BAC2DED4ED09614F4954C2BBCF4A9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF9A626817DEB53F4EEBD2A2D978A6C7 /* Foundation.framework in Frameworks */,
+				608843E4D0A5E7EC7763A45DC981E1D6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1D1A49F68F2AAECDE6C58329420FA193 /* Development Pods */ = {
+		0AF114AF1C9658ACF2C78216EE14F33C /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				2EC3033DBB8F71FDB4999C7AE3A371A1 /* JeweledKit */,
+				B974847563A67C0725910DA2650B3C23 /* JeweledRepository.swift */,
 			);
-			name = "Development Pods";
+			name = Repository;
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		145E0C7892E4B9EE64152A7818F5438F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2BE5BFBB0ABD317F4B31426F14E82DF0 /* LockLoaderView */,
+				3DEC879952C1812CB500B3BEB44CC011 /* StackScrollView */,
+				2D8B13F86AB1E5728CFF509C56B70C7E /* TableViewContainerCell */,
+				618341D3FC5D92DD68927D5B7B5BA223 /* ViewWithSeparators */,
+			);
+			name = Components;
+			path = Components;
+			sourceTree = "<group>";
+		};
+		15775D29AA6EB18262F09F9539EA71E2 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				36924AEA242C436B1A4ABDF37BF589B5 /* JeweledIdentifiable.swift */,
+				13DB435414A4972164E36F09861287F9 /* JeweledPersistable.swift */,
+				FB3C642889B989C55EC02A665FEB018F /* JeweledStorage.swift */,
+				9315D9A15C1565B36CB7CDC3C957AEC2 /* NSManagedObject+Create.swift */,
+				755CC6FDBA2B2D678541645A513FA440 /* NSObject+ClassName.swift */,
+			);
+			name = Storage;
+			path = Storage;
 			sourceTree = "<group>";
 		};
 		2656095C747E24C9AAF3794AB954CD13 /* Products */ = {
@@ -184,25 +210,106 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2EC3033DBB8F71FDB4999C7AE3A371A1 /* JeweledKit */ = {
+		2BE5BFBB0ABD317F4B31426F14E82DF0 /* LockLoaderView */ = {
 			isa = PBXGroup;
 			children = (
-				A1188B4F250512CB00FACBE6 /* Classes */,
-				5B61E3D189114F6954239DDAA1B21A35 /* Pod */,
-				958D702A79E6BB60285F599B48D9629B /* Support Files */,
+				5A68E5EA7C7BA84B3B4C3BF46E3AD125 /* JeweledLockLoaderView.swift */,
+				4691CAE69B9D191B7291E372993F3EE8 /* JeweledLockLoaderView.xib */,
+			);
+			name = LockLoaderView;
+			path = LockLoaderView;
+			sourceTree = "<group>";
+		};
+		2D8B13F86AB1E5728CFF509C56B70C7E /* TableViewContainerCell */ = {
+			isa = PBXGroup;
+			children = (
+				476390DBBC10FA4A8A1FFDC3765EB129 /* JeweledTableViewContainerCell.swift */,
+			);
+			name = TableViewContainerCell;
+			path = TableViewContainerCell;
+			sourceTree = "<group>";
+		};
+		3DEC879952C1812CB500B3BEB44CC011 /* StackScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				9F3DF07E3DE22D623C306DC9A02FE46D /* JeweledStackScrollView.swift */,
+				D85576A58C4043B8FCDA09FE7CE5C426 /* JeweledStackScrollView.xib */,
+			);
+			name = StackScrollView;
+			path = StackScrollView;
+			sourceTree = "<group>";
+		};
+		40AB938BB5DBC351084B00127C6ECFB3 /* JeweledKit */ = {
+			isa = PBXGroup;
+			children = (
+				4FEBB7A9B274C5AA53D98238374E3C7D /* Constants */,
+				AB5EE22FEE8A002922AF047DFDFE4131 /* Core */,
+				4728716BE2E0602590EB7FFFEDD11E37 /* Extensions */,
+				9697481C810C59EB281A88B1CDA0ED9C /* Pod */,
+				899B7FFDF70C08CF36E54FE1BC3AFA54 /* Support Files */,
+				ED5E36300C32A14EA9ED25E9D9EA7739 /* UI */,
+				8524E463A1E8408D57B3C0A26E1A69A1 /* Utils */,
 			);
 			name = JeweledKit;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		5B61E3D189114F6954239DDAA1B21A35 /* Pod */ = {
+		4728716BE2E0602590EB7FFFEDD11E37 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9F4C23197EBA5BF8F24800BBE0ABD923 /* JeweledKit.podspec */,
-				FBCADDA91B794CE05E5C2B255D3C8A4A /* LICENSE */,
-				11780B38AB50F5712A7A48FA27E6BFAF /* README.md */,
+				9C7FF8444FF016889D8C80C2437E5D26 /* DispatchQueue.swift */,
 			);
-			name = Pod;
+			name = Extensions;
+			path = JeweledKit/Classes/Extensions;
+			sourceTree = "<group>";
+		};
+		4FEBB7A9B274C5AA53D98238374E3C7D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DA60D186DCE2253CC6E7FD567DF4D39E /* TimeInterval+Time.swift */,
+			);
+			name = Constants;
+			path = JeweledKit/Classes/Constants;
+			sourceTree = "<group>";
+		};
+		555E8A33C3E78C4566E6F703180471B9 /* SimpleTableView */ = {
+			isa = PBXGroup;
+			children = (
+				688DD72B36067B96FCF3E33496330D06 /* JeweledSimpleTableViewController.swift */,
+				FD52F99C22DDC2116846A9493DAADAA3 /* JeweledSimpleTableViewController.xib */,
+			);
+			name = SimpleTableView;
+			path = SimpleTableView;
+			sourceTree = "<group>";
+		};
+		60A6A402C7BC8751C314CF8EEF28BDC8 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40AB938BB5DBC351084B00127C6ECFB3 /* JeweledKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		618341D3FC5D92DD68927D5B7B5BA223 /* ViewWithSeparators */ = {
+			isa = PBXGroup;
+			children = (
+				BD3B969C9222149A06868A1C1367CEB4 /* JeweledViewWithSeparators.swift */,
+				C851DE4EA5E675AA3BE3FDB71C2A1716 /* JeweledViewWithSeparators.xib */,
+			);
+			name = ViewWithSeparators;
+			path = ViewWithSeparators;
+			sourceTree = "<group>";
+		};
+		64524DD010CEFF7AAE9CF94A7C652614 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A92204B916203CEE300D6FEAF7FBF599 /* JeweledConfigurableView.swift */,
+				10000B927AB77552C5615E2493FEFD53 /* JeweledCoordinator.swift */,
+				7A48E22B069B8880AEC74395AF2CC2B9 /* JeweledNibLoadable.swift */,
+				1D73069E467B332AB127884B69A41042 /* JeweledReusableView.swift */,
+			);
+			name = Protocols;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		66631BBA0B38E23E6B0C4FC44DC29549 /* Pods-JeweledKit_Example */ = {
@@ -238,197 +345,50 @@
 			path = "Target Support Files/Pods-JeweledKit_Tests";
 			sourceTree = "<group>";
 		};
-		958D702A79E6BB60285F599B48D9629B /* Support Files */ = {
+		8524E463A1E8408D57B3C0A26E1A69A1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				6B18D1EBB1DDE6A4C929B115ED7C9CAE /* JeweledKit.modulemap */,
-				272E73D5FA40EADC83190C581E818018 /* JeweledKit-dummy.m */,
-				2B110CA026FFEEEB56479384873C6159 /* JeweledKit-Info.plist */,
-				745222777D70BB6EAAFE28FEEB2FAEDE /* JeweledKit-prefix.pch */,
-				5C5AE91BD42A44002E4D38F25A38305B /* JeweledKit-umbrella.h */,
-				776C35D5753FC4530F30FCBEFF30A7BA /* JeweledKit.debug.xcconfig */,
-				D2BC0BD323CA2244825446C4BC367011 /* JeweledKit.release.xcconfig */,
+				1EA27C0EC4455289A253771A0ED7BA16 /* JeweledCountdownTimer.swift */,
+				A524FEE1D3CDAF2541FB1F9C360A94E2 /* JeweledDebouncer.swift */,
+			);
+			name = Utils;
+			path = JeweledKit/Classes/Utils;
+			sourceTree = "<group>";
+		};
+		899B7FFDF70C08CF36E54FE1BC3AFA54 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9448AF2F9BC32DBE518FE83794924B22 /* JeweledKit.modulemap */,
+				195C9C76EBE5F836CEA8998105E48026 /* JeweledKit-dummy.m */,
+				A7C9A20E1C7DAE1F13669B9AE8F19733 /* JeweledKit-Info.plist */,
+				8917AA959E0AB9E6609251D617532D38 /* JeweledKit-prefix.pch */,
+				553AB6409A1DF07D04101C9C5F589DC7 /* JeweledKit-umbrella.h */,
+				F555636D34B729A29F3036CABEC54593 /* JeweledKit.debug.xcconfig */,
+				F7C33DAF02A53557999B47EF0420EAC6 /* JeweledKit.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/JeweledKit";
 			sourceTree = "<group>";
 		};
-		A1188B4F250512CB00FACBE6 /* Classes */ = {
+		9697481C810C59EB281A88B1CDA0ED9C /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				A138BA76251943A800AB7FFB /* Extensions */,
-				A1D0FA0F2513EDB2008AC3F2 /* Constants */,
-				A1D0FA0B2513ED35008AC3F2 /* Utils */,
-				A1188B6C250512D400FACBE6 /* UI */,
-				A1188B50250512CB00FACBE6 /* Core */,
+				09F94DBC19C101DA9D170CE902E03E30 /* JeweledKit.podspec */,
+				20FDA9CC1AAA42D4B2B2F32BAB51C09E /* LICENSE */,
+				1EA9226CA6329518DE1939263EDDF287 /* README.md */,
 			);
-			name = Classes;
-			path = JeweledKit/Classes;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		A1188B50250512CB00FACBE6 /* Core */ = {
+		AB5EE22FEE8A002922AF047DFDFE4131 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				A1188B51250512CB00FACBE6 /* Repository */,
-				A1188B53250512CB00FACBE6 /* RequestLoader */,
-				A1188B59250512CB00FACBE6 /* Storage */,
+				0AF114AF1C9658ACF2C78216EE14F33C /* Repository */,
+				BB80432BD0E519BB1017AF46B1201F89 /* RequestLoader */,
+				15775D29AA6EB18262F09F9539EA71E2 /* Storage */,
 			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		A1188B51250512CB00FACBE6 /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				A1188B52250512CB00FACBE6 /* JeweledRepository.swift */,
-			);
-			path = Repository;
-			sourceTree = "<group>";
-		};
-		A1188B53250512CB00FACBE6 /* RequestLoader */ = {
-			isa = PBXGroup;
-			children = (
-				A1188B54250512CB00FACBE6 /* JeweledNetworkLogFormatter.swift */,
-				A1188B55250512CB00FACBE6 /* JeweledErrorParser.swift */,
-				A1188B56250512CB00FACBE6 /* JeweledRequest.swift */,
-				A1188B57250512CB00FACBE6 /* URLRequestFactory.swift */,
-				A1188B58250512CB00FACBE6 /* JeweledRequestLoader.swift */,
-			);
-			path = RequestLoader;
-			sourceTree = "<group>";
-		};
-		A1188B59250512CB00FACBE6 /* Storage */ = {
-			isa = PBXGroup;
-			children = (
-				A1188B5A250512CB00FACBE6 /* NSObject+ClassName.swift */,
-				A1188B5B250512CB00FACBE6 /* JeweledStorage.swift */,
-				A1188B5C250512CB00FACBE6 /* JeweledIdentifiable.swift */,
-				A1188B5D250512CB00FACBE6 /* NSManagedObject+Create.swift */,
-				A1188B5E250512CB00FACBE6 /* JeweledPersistable.swift */,
-			);
-			path = Storage;
-			sourceTree = "<group>";
-		};
-		A1188B6C250512D400FACBE6 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				A1BDFC5A2510CF4600B94383 /* Containers */,
-				A1BDFC592510CF3E00B94383 /* Components */,
-				A1188B702505136B00FACBE6 /* Protocols */,
-				A1188B6D2505130900FACBE6 /* Extensions */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		A1188B6D2505130900FACBE6 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				A13F6A562511158700C8FED3 /* UITableView.swift */,
-				A13F6A572511158800C8FED3 /* UIView.swift */,
-				A1BDFC5E2510E59200B94383 /* UIView+FirstResponding.swift */,
-				A138BAA325195C8300AB7FFB /* UIViewController+LockLoaderDisplayable.swift */,
-				A138BAB625195F8B00AB7FFB /* UIViewController+Alert.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		A1188B702505136B00FACBE6 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				A13F6A542511155E00C8FED3 /* JeweledNibLoadable.swift */,
-				A1BDFC632510F06400B94383 /* JeweledConfigurableView.swift */,
-				A138BA92251945CE00AB7FFB /* JeweledLockLoaderDisplayable.swift */,
-				A138BA9E25194B9F00AB7FFB /* JeweledCoordinator.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
-		A138BA67251941B900AB7FFB /* LockActivityView */ = {
-			isa = PBXGroup;
-			children = (
-				A138BA68251941C300AB7FFB /* JeweledLockActivityView.swift */,
-				A138BA6D251941D100AB7FFB /* JeweledLockActivityView.xib */,
-			);
-			path = LockActivityView;
-			sourceTree = "<group>";
-		};
-		A138BA76251943A800AB7FFB /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				A138BA77251943B000AB7FFB /* DispatchQueue.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
-		A138BA7C2519440A00AB7FFB /* PaginationTableView */ = {
-			isa = PBXGroup;
-			children = (
-				A138BA7E2519441C00AB7FFB /* JeweledPaginationTableViewController.swift */,
-				A138BA7D2519441C00AB7FFB /* JeweledPaginationTableView.swift */,
-			);
-			path = PaginationTableView;
-			sourceTree = "<group>";
-		};
-		A1BDFC592510CF3E00B94383 /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				A138BA67251941B900AB7FFB /* LockActivityView */,
-				A1BDFC5B2510D42E00B94383 /* StackScrollView */,
-				A1BDFC692510F3DB00B94383 /* ViewWithSeparators */,
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		A1BDFC5A2510CF4600B94383 /* Containers */ = {
-			isa = PBXGroup;
-			children = (
-				A138BA7C2519440A00AB7FFB /* PaginationTableView */,
-				A1BDFC602510EFC500B94383 /* SimpleTableView */,
-			);
-			path = Containers;
-			sourceTree = "<group>";
-		};
-		A1BDFC5B2510D42E00B94383 /* StackScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				A1BDFC5C2510D44600B94383 /* JeweledStackScrollView.swift */,
-				A1BDFC672510F27400B94383 /* JeweledStackScrollView.xib */,
-			);
-			path = StackScrollView;
-			sourceTree = "<group>";
-		};
-		A1BDFC602510EFC500B94383 /* SimpleTableView */ = {
-			isa = PBXGroup;
-			children = (
-				A1BDFC612510EFE400B94383 /* JeweledSimpleTableViewController.swift */,
-				A1BDFC652510F25300B94383 /* JeweledSimpleTableViewController.xib */,
-			);
-			path = SimpleTableView;
-			sourceTree = "<group>";
-		};
-		A1BDFC692510F3DB00B94383 /* ViewWithSeparators */ = {
-			isa = PBXGroup;
-			children = (
-				A1BDFC6A2510F3FD00B94383 /* JeweledViewWithSeparators.swift */,
-				A1BDFC6C2510F43000B94383 /* JeweledViewWithSeparators.xib */,
-			);
-			path = ViewWithSeparators;
-			sourceTree = "<group>";
-		};
-		A1D0FA0B2513ED35008AC3F2 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				A1D0FA0C2513ED46008AC3F2 /* JeweledCountdownTimer.swift */,
-				A138BA99251949DE00AB7FFB /* JeweledDebouncer.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		A1D0FA0F2513EDB2008AC3F2 /* Constants */ = {
-			isa = PBXGroup;
-			children = (
-				A1D0FA102513EDBE008AC3F2 /* TimeInterval+Time.swift */,
-			);
-			path = Constants;
+			name = Core;
+			path = JeweledKit/Classes/Core;
 			sourceTree = "<group>";
 		};
 		B3576FDE2096B3A2B6F4B27A113A190C /* Targets Support Files */ = {
@@ -438,6 +398,19 @@
 				6B9A24635AF5E12BE8F9C5B6733A35BF /* Pods-JeweledKit_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BB80432BD0E519BB1017AF46B1201F89 /* RequestLoader */ = {
+			isa = PBXGroup;
+			children = (
+				D66AA707109FC7F8319B42B631846FF0 /* JeweledErrorParser.swift */,
+				B94C3A768DAC6D3A28154A247E581930 /* JeweledNetworkLogFormatter.swift */,
+				510659198991CACC4E7A327264A95C27 /* JeweledRequest.swift */,
+				0C9E2A0E0A9FBF1ED0E8DE82809D499A /* JeweledRequestLoader.swift */,
+				1E4D165C2657E1754FFBEAB7D514C433 /* URLRequestFactory.swift */,
+			);
+			name = RequestLoader;
+			path = RequestLoader;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -452,11 +425,23 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				1D1A49F68F2AAECDE6C58329420FA193 /* Development Pods */,
+				60A6A402C7BC8751C314CF8EEF28BDC8 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				2656095C747E24C9AAF3794AB954CD13 /* Products */,
 				B3576FDE2096B3A2B6F4B27A113A190C /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		D1E5244103FB62CFE20329A531C51287 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5D042B5A063C01B796607EDC29E654CD /* UITableView.swift */,
+				55B481ADB82F173133F7BBE5BE053296 /* UIView.swift */,
+				6AA8DB117BEF34892B1FE4C5A1E93D02 /* UIView+FirstResponding.swift */,
+				BB55DC3DCA7C7AB3B341D80BAC835828 /* UIViewController+Alert.swift */,
+			);
+			name = Extensions;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -467,30 +452,62 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E807F3B4AB760B0C1744CFE03FEA58EB /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				FFC3B410EC891C1D0156C5A286CB6B34 /* PaginationTableView */,
+				555E8A33C3E78C4566E6F703180471B9 /* SimpleTableView */,
+			);
+			name = Containers;
+			path = Containers;
+			sourceTree = "<group>";
+		};
+		ED5E36300C32A14EA9ED25E9D9EA7739 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				145E0C7892E4B9EE64152A7818F5438F /* Components */,
+				E807F3B4AB760B0C1744CFE03FEA58EB /* Containers */,
+				D1E5244103FB62CFE20329A531C51287 /* Extensions */,
+				64524DD010CEFF7AAE9CF94A7C652614 /* Protocols */,
+			);
+			name = UI;
+			path = JeweledKit/Classes/UI;
+			sourceTree = "<group>";
+		};
+		FFC3B410EC891C1D0156C5A286CB6B34 /* PaginationTableView */ = {
+			isa = PBXGroup;
+			children = (
+				B95ECF20BC3854EE3C30F49896585162 /* JeweledPaginationTableView.swift */,
+				63C772581CEB45B7F2F6049340FD9CE1 /* JeweledPaginationTableViewController.swift */,
+			);
+			name = PaginationTableView;
+			path = PaginationTableView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3C48616EF48D2041BA3C244058E64C0B /* Headers */ = {
+		1F0ACEFA92CB6D878A79C2233F356915 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A819EC9C3996EFB3E17519AB91F687A2 /* Pods-JeweledKit_Example-umbrella.h in Headers */,
+				A309A16B641774AA6B10C67BE99C11AB /* Pods-JeweledKit_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8E9BAE52A423D8004FD150E1326A0524 /* Headers */ = {
+		7742C0767140FB9A2D3AF411A494FE2F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD96FA9C60FF157D8D3376F72A99546A /* JeweledKit-umbrella.h in Headers */,
+				ACEFC71774B7448FD43938632CA33564 /* JeweledKit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC0F97DD2236613E290A0EBA8B820DB6 /* Headers */ = {
+		A4F7BC3F342041BB288378BF4F5C0DDD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36AE822F291FD36660231B194631EA83 /* Pods-JeweledKit_Tests-umbrella.h in Headers */,
+				0B28DE6974F7E884E24BA4F4DFE2E290 /* Pods-JeweledKit_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,12 +516,12 @@
 /* Begin PBXNativeTarget section */
 		663721CBE97EBB74ED7AD91C3201836C /* JeweledKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC26E2BEEA9BE807E3E993F1756C9A6B /* Build configuration list for PBXNativeTarget "JeweledKit" */;
+			buildConfigurationList = 42500857FF6E21CE0E0997BE7F7DA4BF /* Build configuration list for PBXNativeTarget "JeweledKit" */;
 			buildPhases = (
-				8E9BAE52A423D8004FD150E1326A0524 /* Headers */,
-				B3FDE9BC60925DD57C37C57A4EB4FAD7 /* Sources */,
-				0FB88CCB3857FDF7E689EEF93778FECC /* Frameworks */,
-				E2BCE569006D04E8B91B39066A181071 /* Resources */,
+				7742C0767140FB9A2D3AF411A494FE2F /* Headers */,
+				E422372CE1B836A3F0A3760017A6681A /* Sources */,
+				820FB2FA61DE02CD77A40F362F387B84 /* Frameworks */,
+				57E6FBD4D6409A64CA802F58AB0ADACB /* Resources */,
 			);
 			buildRules = (
 			);
@@ -517,17 +534,17 @@
 		};
 		71ED25649E0BFCF519F3808F4EE5407D /* Pods-JeweledKit_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 59CE8364093F34BDFEAE1494FA40FC00 /* Build configuration list for PBXNativeTarget "Pods-JeweledKit_Example" */;
+			buildConfigurationList = 08A94F94C84DB685038F7E4E91C323AF /* Build configuration list for PBXNativeTarget "Pods-JeweledKit_Example" */;
 			buildPhases = (
-				3C48616EF48D2041BA3C244058E64C0B /* Headers */,
-				D0DD605A6D639713B9AB29E31B972B56 /* Sources */,
-				E86625EEE3344A7FDF1F05374F04D1AE /* Frameworks */,
-				5835B7756A6E1219631A1886F24342C3 /* Resources */,
+				A4F7BC3F342041BB288378BF4F5C0DDD /* Headers */,
+				A84AC39A029EA24E934B71E15957C0CB /* Sources */,
+				B31BAC2DED4ED09614F4954C2BBCF4A9 /* Frameworks */,
+				CBE8AD31966D494F147D97F3F3A3B512 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5A22D6F9911996F3C5E8CA587082E486 /* PBXTargetDependency */,
+				E0027B743685A925DE30AD56D0CD8723 /* PBXTargetDependency */,
 			);
 			name = "Pods-JeweledKit_Example";
 			productName = "Pods-JeweledKit_Example";
@@ -536,17 +553,17 @@
 		};
 		F5610CC273E271C08DB3A74CC6F1BBA4 /* Pods-JeweledKit_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FD4F60E4F2A9565BB7792A1852289BC0 /* Build configuration list for PBXNativeTarget "Pods-JeweledKit_Tests" */;
+			buildConfigurationList = 8BEEB6980C1B158A197563511491BFDF /* Build configuration list for PBXNativeTarget "Pods-JeweledKit_Tests" */;
 			buildPhases = (
-				CC0F97DD2236613E290A0EBA8B820DB6 /* Headers */,
-				D00C88DCCAE7651A1CECEFCDA56F2ED9 /* Sources */,
-				E93FB8C14E04AE74B4DE400B74F540ED /* Frameworks */,
-				E58923ECDC954DA8503F60DFE8E282AC /* Resources */,
+				1F0ACEFA92CB6D878A79C2233F356915 /* Headers */,
+				2E30624D6CA453220A402F2A7AAC0AF8 /* Sources */,
+				08E594B13FE6448BBAADFCF7CC4C2B84 /* Frameworks */,
+				BE89DA11F8816533245CDE6BDD85A1AD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3FC3B66FC42C012800B44A0D81428276 /* PBXTargetDependency */,
+				95CE5C38F961A2E350511A8D61A4D36C /* PBXTargetDependency */,
 			);
 			name = "Pods-JeweledKit_Tests";
 			productName = "Pods-JeweledKit_Tests";
@@ -561,11 +578,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
-				TargetAttributes = {
-					663721CBE97EBB74ED7AD91C3201836C = {
-						LastSwiftMigration = 1160;
-					};
-				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -588,25 +600,21 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5835B7756A6E1219631A1886F24342C3 /* Resources */ = {
+		57E6FBD4D6409A64CA802F58AB0ADACB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2BCE569006D04E8B91B39066A181071 /* Resources */ = {
+		BE89DA11F8816533245CDE6BDD85A1AD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1BDFC662510F25300B94383 /* JeweledSimpleTableViewController.xib in Resources */,
-				A138BA6E251941D100AB7FFB /* JeweledLockActivityView.xib in Resources */,
-				A1BDFC682510F27400B94383 /* JeweledStackScrollView.xib in Resources */,
-				A1BDFC6D2510F43000B94383 /* JeweledViewWithSeparators.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E58923ECDC954DA8503F60DFE8E282AC /* Resources */ = {
+		CBE8AD31966D494F147D97F3F3A3B512 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -616,270 +624,83 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B3FDE9BC60925DD57C37C57A4EB4FAD7 /* Sources */ = {
+		2E30624D6CA453220A402F2A7AAC0AF8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1D0FA112513EDBE008AC3F2 /* TimeInterval+Time.swift in Sources */,
-				A13F6A592511158800C8FED3 /* UIView.swift in Sources */,
-				A138BAB725195F8B00AB7FFB /* UIViewController+Alert.swift in Sources */,
-				A13F6A552511155E00C8FED3 /* JeweledNibLoadable.swift in Sources */,
-				A1BDFC5D2510D44600B94383 /* JeweledStackScrollView.swift in Sources */,
-				A138BA9A251949DE00AB7FFB /* JeweledDebouncer.swift in Sources */,
-				A1188B61250512CB00FACBE6 /* JeweledNetworkLogFormatter.swift in Sources */,
-				A1188B6A250512CB00FACBE6 /* JeweledPersistable.swift in Sources */,
-				A138BA9F25194B9F00AB7FFB /* JeweledCoordinator.swift in Sources */,
-				A138BA7F2519441C00AB7FFB /* JeweledPaginationTableView.swift in Sources */,
-				A138BA93251945CE00AB7FFB /* JeweledLockLoaderDisplayable.swift in Sources */,
-				A1188B63250512CB00FACBE6 /* JeweledRequest.swift in Sources */,
-				A1188B67250512CB00FACBE6 /* JeweledStorage.swift in Sources */,
-				A1BDFC5F2510E59200B94383 /* UIView+FirstResponding.swift in Sources */,
-				A1188B60250512CB00FACBE6 /* JeweledRepository.swift in Sources */,
-				A138BAA425195C8300AB7FFB /* UIViewController+LockLoaderDisplayable.swift in Sources */,
-				A1188B68250512CB00FACBE6 /* JeweledIdentifiable.swift in Sources */,
-				A138BA78251943B000AB7FFB /* DispatchQueue.swift in Sources */,
-				A1D0FA0D2513ED46008AC3F2 /* JeweledCountdownTimer.swift in Sources */,
-				A1188B69250512CB00FACBE6 /* NSManagedObject+Create.swift in Sources */,
-				A13F6A582511158800C8FED3 /* UITableView.swift in Sources */,
-				A1188B62250512CB00FACBE6 /* JeweledErrorParser.swift in Sources */,
-				A138BA69251941C300AB7FFB /* JeweledLockActivityView.swift in Sources */,
-				A1188B64250512CB00FACBE6 /* URLRequestFactory.swift in Sources */,
-				A138BA802519441C00AB7FFB /* JeweledPaginationTableViewController.swift in Sources */,
-				A1BDFC642510F06400B94383 /* JeweledConfigurableView.swift in Sources */,
-				A1BDFC622510EFE400B94383 /* JeweledSimpleTableViewController.swift in Sources */,
-				A1188B66250512CB00FACBE6 /* NSObject+ClassName.swift in Sources */,
-				A1BDFC6B2510F3FD00B94383 /* JeweledViewWithSeparators.swift in Sources */,
-				A1188B65250512CB00FACBE6 /* JeweledRequestLoader.swift in Sources */,
-				E35D4605828FBD7E84A439AFD4042123 /* JeweledKit-dummy.m in Sources */,
+				414F745F14C66131153088AE325DD398 /* Pods-JeweledKit_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D00C88DCCAE7651A1CECEFCDA56F2ED9 /* Sources */ = {
+		A84AC39A029EA24E934B71E15957C0CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B069C113311248EB908DFE643731D043 /* Pods-JeweledKit_Tests-dummy.m in Sources */,
+				F2FE2194C89590CFFAAAC8FE441300C3 /* Pods-JeweledKit_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0DD605A6D639713B9AB29E31B972B56 /* Sources */ = {
+		E422372CE1B836A3F0A3760017A6681A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85E2D7D9B9B818A9562585A589A3C2CA /* Pods-JeweledKit_Example-dummy.m in Sources */,
+				F477B6AB6CAAF43C4AED0E3641C80A2D /* DispatchQueue.swift in Sources */,
+				C61EAEE6F79ECE27E220B2078B088787 /* JeweledConfigurableView.swift in Sources */,
+				38819D3B1E31B07741AA34C681BC7D74 /* JeweledCoordinator.swift in Sources */,
+				9DF0814D3FDDD68D078187A56D2A579B /* JeweledCountdownTimer.swift in Sources */,
+				986439457631B1917038ADB2F1D7F595 /* JeweledDebouncer.swift in Sources */,
+				190F10C19BD54A45335B48A62E065CCF /* JeweledErrorParser.swift in Sources */,
+				B2B25064D04B7B1E734200D68D1AB419 /* JeweledIdentifiable.swift in Sources */,
+				9205453CC13ACA87F145240E77FACFF1 /* JeweledKit-dummy.m in Sources */,
+				01EBE6CC0561003F36BEF5928510195B /* JeweledLockLoaderView.swift in Sources */,
+				E19AD7B9457AA4807EB9E79EB898A6AC /* JeweledLockLoaderView.xib in Sources */,
+				38A8B1814500168C65FFBD45ED334EB2 /* JeweledNetworkLogFormatter.swift in Sources */,
+				F1E4F8BB246B092087901C33AA72BBD8 /* JeweledNibLoadable.swift in Sources */,
+				85DAF485C135B959C3F43912F1930734 /* JeweledPaginationTableView.swift in Sources */,
+				E85FFB8437A5394C6EDA65ED2F4922A0 /* JeweledPaginationTableViewController.swift in Sources */,
+				8B281EC10C8D2F497F8000649DB96D65 /* JeweledPersistable.swift in Sources */,
+				915153F861EF98962CD648DCCA3182F3 /* JeweledRepository.swift in Sources */,
+				BE9DA735598258695C91B3656CD28E45 /* JeweledRequest.swift in Sources */,
+				31420C3E9DA6CFE64B8E4AC8EC428BD5 /* JeweledRequestLoader.swift in Sources */,
+				E2C13F9CAC66D68F27BF253620CD3EFD /* JeweledReusableView.swift in Sources */,
+				45AA8359DACB4F6E11B54466D355A74B /* JeweledSimpleTableViewController.swift in Sources */,
+				9800171C56B616450582CB919845EBBA /* JeweledSimpleTableViewController.xib in Sources */,
+				B959A694FDB5C0F7576B05EBD1632922 /* JeweledStackScrollView.swift in Sources */,
+				20ADD0CD8F46902E29068812EFF7B709 /* JeweledStackScrollView.xib in Sources */,
+				99BA8556BA35BF723ED49404F9295BC2 /* JeweledStorage.swift in Sources */,
+				5687974E6B8B58C2E08E4044F2A315A5 /* JeweledTableViewContainerCell.swift in Sources */,
+				46AA57E5D15D1D263DAF5886D7C25296 /* JeweledViewWithSeparators.swift in Sources */,
+				25852995D6285C5655CCE0DAF1910390 /* JeweledViewWithSeparators.xib in Sources */,
+				501B2E6B1F972F973381D871FDAEF118 /* NSManagedObject+Create.swift in Sources */,
+				D6A0A0681D224B8802B81B85441219B7 /* NSObject+ClassName.swift in Sources */,
+				00920EF40B8746EFC76F0759BF3E426F /* TimeInterval+Time.swift in Sources */,
+				BB4A89D2170D703662B8E5FB073141BA /* UITableView.swift in Sources */,
+				D5A35490456A179E28CAAD4305A6B1E0 /* UIView+FirstResponding.swift in Sources */,
+				4E6EDFD290783C76AE6DB851AAA589E3 /* UIView.swift in Sources */,
+				0AD6CEFE61D395F239648676E7474E7E /* UIViewController+Alert.swift in Sources */,
+				524ED0A7F7D8607D141915AAFF73C430 /* URLRequestFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3FC3B66FC42C012800B44A0D81428276 /* PBXTargetDependency */ = {
+		95CE5C38F961A2E350511A8D61A4D36C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-JeweledKit_Example";
 			target = 71ED25649E0BFCF519F3808F4EE5407D /* Pods-JeweledKit_Example */;
-			targetProxy = D0F66EBC3073B91F216A3B3C0056CA85 /* PBXContainerItemProxy */;
+			targetProxy = 3995D9977E4E716E2D0CC7B391B9D814 /* PBXContainerItemProxy */;
 		};
-		5A22D6F9911996F3C5E8CA587082E486 /* PBXTargetDependency */ = {
+		E0027B743685A925DE30AD56D0CD8723 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JeweledKit;
 			target = 663721CBE97EBB74ED7AD91C3201836C /* JeweledKit */;
-			targetProxy = 5DF40F94806AD653800FA34633D38205 /* PBXContainerItemProxy */;
+			targetProxy = 9EC007BD76D0FFBA9563AF125FBF14B5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		4ED9B7067A7A3F717D4D5B5C6BFC9807 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9790B0624BD2C8940A53B4C4F2CFCF57 /* Pods-JeweledKit_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-JeweledKit_Example/Pods-JeweledKit_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JeweledKit_Example/Pods-JeweledKit_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		51B6CDF6BF9DE31D7E36EE8C734A4A68 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CDB9D4ACB1BD2CEDDAB8426460E2BC2 /* Pods-JeweledKit_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-JeweledKit_Tests/Pods-JeweledKit_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JeweledKit_Tests/Pods-JeweledKit_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6C9C67844AF5DEA5D828B6C41CF96503 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2BC0BD323CA2244825446C4BC367011 /* JeweledKit.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JeweledKit/JeweledKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JeweledKit/JeweledKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JeweledKit/JeweledKit.modulemap";
-				PRODUCT_MODULE_NAME = JeweledKit;
-				PRODUCT_NAME = JeweledKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		87BF810EF917A12F307C18EA35AE091E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32D6140562BA7B4B8B4628F8FAEA80A1 /* Pods-JeweledKit_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-JeweledKit_Tests/Pods-JeweledKit_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-JeweledKit_Tests/Pods-JeweledKit_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B0087CB4594321EF41619F3181FE120E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+		196DFA3E4A09A28224918543529A1885 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -943,11 +764,111 @@
 			};
 			name = Debug;
 		};
-		D30C3C70917E319E5576C99E98F226CC /* Release */ = {
+		246D39961CD82313D83C0DE1F51F5C74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F555636D34B729A29F3036CABEC54593 /* JeweledKit.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JeweledKit/JeweledKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JeweledKit/JeweledKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JeweledKit/JeweledKit.modulemap";
+				PRODUCT_MODULE_NAME = JeweledKit;
+				PRODUCT_NAME = JeweledKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2D3B9AFEEE6302325BA5D431257F0FB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CDB9D4ACB1BD2CEDDAB8426460E2BC2 /* Pods-JeweledKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JeweledKit_Tests/Pods-JeweledKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JeweledKit_Tests/Pods-JeweledKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		39B7C50F15C9E1F6600E265BF6976056 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7C33DAF02A53557999B47EF0420EAC6 /* JeweledKit.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JeweledKit/JeweledKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JeweledKit/JeweledKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JeweledKit/JeweledKit.modulemap";
+				PRODUCT_MODULE_NAME = JeweledKit;
+				PRODUCT_NAME = JeweledKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		68CE60B1855ACE4339CFFAFCCE20FD54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 80ADDDE35FA78455F2E4B0F0E03BAF67 /* Pods-JeweledKit_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -977,10 +898,12 @@
 			};
 			name = Release;
 		};
-		E1944331D7843ACF7C18A9B2B4E4A783 /* Debug */ = {
+		7670AFE69F622C9FEE8BFC76FA267F2F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 776C35D5753FC4530F30FCBEFF30A7BA /* JeweledKit.debug.xcconfig */;
+			baseConfigurationReference = 9790B0624BD2C8940A53B4C4F2CFCF57 /* Pods-JeweledKit_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -990,59 +913,155 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JeweledKit/JeweledKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JeweledKit/JeweledKit-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-JeweledKit_Example/Pods-JeweledKit_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/JeweledKit/JeweledKit.modulemap";
-				PRODUCT_MODULE_NAME = JeweledKit;
-				PRODUCT_NAME = JeweledKit;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JeweledKit_Example/Pods-JeweledKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
+		858F2918362D4E81052618253412A52F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32D6140562BA7B4B8B4628F8FAEA80A1 /* Pods-JeweledKit_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JeweledKit_Tests/Pods-JeweledKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JeweledKit_Tests/Pods-JeweledKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		08A94F94C84DB685038F7E4E91C323AF /* Build configuration list for PBXNativeTarget "Pods-JeweledKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7670AFE69F622C9FEE8BFC76FA267F2F /* Debug */,
+				68CE60B1855ACE4339CFFAFCCE20FD54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42500857FF6E21CE0E0997BE7F7DA4BF /* Build configuration list for PBXNativeTarget "JeweledKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246D39961CD82313D83C0DE1F51F5C74 /* Debug */,
+				39B7C50F15C9E1F6600E265BF6976056 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
-				B0087CB4594321EF41619F3181FE120E /* Release */,
+				196DFA3E4A09A28224918543529A1885 /* Debug */,
+				B01D14FDC83DCF9D4BE53066BEA96D05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		59CE8364093F34BDFEAE1494FA40FC00 /* Build configuration list for PBXNativeTarget "Pods-JeweledKit_Example" */ = {
+		8BEEB6980C1B158A197563511491BFDF /* Build configuration list for PBXNativeTarget "Pods-JeweledKit_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4ED9B7067A7A3F717D4D5B5C6BFC9807 /* Debug */,
-				D30C3C70917E319E5576C99E98F226CC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DC26E2BEEA9BE807E3E993F1756C9A6B /* Build configuration list for PBXNativeTarget "JeweledKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E1944331D7843ACF7C18A9B2B4E4A783 /* Debug */,
-				6C9C67844AF5DEA5D828B6C41CF96503 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FD4F60E4F2A9565BB7792A1852289BC0 /* Build configuration list for PBXNativeTarget "Pods-JeweledKit_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				51B6CDF6BF9DE31D7E36EE8C734A4A68 /* Debug */,
-				87BF810EF917A12F307C18EA35AE091E /* Release */,
+				2D3B9AFEEE6302325BA5D431257F0FB4 /* Debug */,
+				858F2918362D4E81052618253412A52F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

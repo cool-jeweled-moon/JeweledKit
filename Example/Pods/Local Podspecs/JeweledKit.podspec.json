@@ -1,7 +1,7 @@
 {
   "name": "JeweledKit",
-  "version": "0.1.0",
-  "summary": "A short description of JeweledKit.",
+  "version": "0.1.14",
+  "summary": "A short description.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/cool-jeweled-moon/JeweledKit",
   "license": {
@@ -13,10 +13,12 @@
   },
   "source": {
     "git": "https://github.com/cool-jeweled-moon/JeweledKit.git",
-    "tag": "0.1.0"
+    "tag": "0.1.14"
   },
+  "swift_versions": "5.0",
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "JeweledKit/Classes/**/*"
+  "source_files": "JeweledKit/Classes/**/*",
+  "swift_version": "5.0"
 }

@@ -7,17 +7,25 @@
 
 import UIKit
 
+public enum PaginationTableCellType<T: JeweledConfigurableView> {
+    case cell(model: T.ConfigurationModel)
+    case loader(model: JeweledLockLoaderTableViewCell.ConfigurationModel)
+}
+
 public protocol JeweledPaginationTableViewDataSource {
+    
+    typealias CellType = PaginationTableCellType<Cell>
+    typealias LoaderCell = JeweledLockLoaderTableViewCell
     
     associatedtype Cell: UITableViewCell, JeweledConfigurableView
     
-    var configurationModels: [Cell.ConfigurationModel] { get }
+    var cellModels: [CellType] { get }
     
     func loadData(searchText: String?,
-                  completion: @escaping (Error?) -> Void)
+                  updateUI: @escaping (Error?) -> Void)
     
     func refresh(searchText: String?,
-                 completion: @escaping (Error?) -> Void)
+                 updateUI: @escaping (Error?) -> Void)
 }
 
 public struct JeweledPaginationTableViewConfiguration {
@@ -25,18 +33,21 @@ public struct JeweledPaginationTableViewConfiguration {
     public var estimatedRowHeight: CGFloat
     public var showTopSeparator: Bool
     public var showSeparatorsWhileEmpty: Bool
-    public var emptyDataSourceMessage: String
+    public var emptySearchedDataMessage: String?
+    public var emptyDataSourceMessage: String?
     
     public init(searchDebounce: TimeInterval = 0.2,
                 estimatedRowHeight: CGFloat = 100.0,
                 showTopSeparator: Bool = false,
                 showSeparatorsWhileEmpty: Bool = false,
-                emptyDataSourceMessage: String = "Not found") {
+                emptyDataSourceMessage: String? = "No data",
+                emptySearchedDataMessage: String? = "Not found") {
         self.searchDebounce = searchDebounce
         self.estimatedRowHeight = estimatedRowHeight
         self.showTopSeparator = showTopSeparator
         self.showSeparatorsWhileEmpty = showSeparatorsWhileEmpty
         self.emptyDataSourceMessage = emptyDataSourceMessage
+        self.emptySearchedDataMessage = emptySearchedDataMessage
     }
 }
 
@@ -44,13 +55,13 @@ public final class JeweledPaginationTableViewController<DataSource>: UIViewContr
 UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate
 where DataSource: JeweledPaginationTableViewDataSource {
     
-    var selectionActionBlock: ((_ model: DataSource.Cell.ConfigurationModel) -> Void)? {
+    public var selectionActionBlock: ((_ model: DataSource.Cell.ConfigurationModel) -> Void)? {
         didSet {
             paginationTableView.tableView.allowsSelection = selectionActionBlock != nil
         }
     }
     
-    var tableView: UITableView {
+    public var tableView: UITableView {
         paginationTableView.tableView
     }
     
@@ -86,6 +97,7 @@ where DataSource: JeweledPaginationTableViewDataSource {
     
     private func configureUI() {
         tableView.register(DataSource.Cell.self)
+        tableView.register(JeweledLockLoaderTableViewCell.self)
         tableView.configureAutomaticDimensions(estimatedRowHeight: configuration.estimatedRowHeight)
         tableView.tableHeaderView = configuration.showTopSeparator ? nil : UIView()
         tableView.tableFooterView = configuration.showSeparatorsWhileEmpty ? nil : UIView()
@@ -118,67 +130,72 @@ where DataSource: JeweledPaginationTableViewDataSource {
     // MARK: — Data fetching
     
     private func loadData() {
-        if dataSource.configurationModels.isEmpty {
-            showLockActivityView(in: tableView)
-        }
-
         dataSource.loadData(searchText: searchText) { [weak self] error in
-            self?.handleResult(error)
+            self?.updateUI(error)
         }
     }
     
     private func refresh() {
         dataSource.refresh(searchText: searchText) { [weak self] error in
-            self?.handleResult(error)
+            self?.updateUI(error)
         }
     }
     
-    private func handleResult(_ error: Error?) {
+    private func updateUI(_ error: Error?) {
         DispatchQueue.main.asyncIfNeeded { [weak self] in
             guard let self = self else { return }
-            
+
             self.paginationTableView.refreshControl.endRefreshing()
-            
+            self.paginationTableView.tableView.reloadData()
             if let error = error {
-                if self.dataSource.configurationModels.isEmpty {
-                    self.showLockActivityViewMessage(text: error.localizedDescription)
-                } else {
-                    self.showAlert(error: error)
-                    self.hideLockActivityView()
-                }
-            } else {
-                if self.dataSource.configurationModels.isEmpty {
-                    self.showLockActivityViewMessage(text: self.configuration.emptyDataSourceMessage)
-                } else {
-                    self.hideLockActivityView()
-                }
-                self.paginationTableView.tableView.reloadData()
+                self.showAlert(error: error)
             }
         }
     }
-    
     // MARK: — UITableViewDataSource
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: DataSource.Cell = tableView.dequeueReusableCell(forIndexPath: indexPath)
-        cell.configure(with: dataSource.configurationModels[indexPath.row])
-        
-        return cell
+        switch dataSource.cellModels[indexPath.row] {
+        case .cell(let model):
+            let cell: DataSource.Cell = tableView.dequeueReusableCell(forIndexPath: indexPath)
+            cell.configure(with: model)
+            
+            return cell
+        case .loader(let model):
+            let cell: JeweledLockLoaderTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
+            cell.configure(with: model)
+            cell.selectionStyle = .none
+            cell.separatorInset.left = CGFloat.greatestFiniteMagnitude
+            
+            return cell
+        }
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataSource.configurationModels.count
+        return dataSource.cellModels.count
     }
     
     // MARK: — UITableViewDelegate
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        selectionActionBlock?(dataSource.configurationModels[indexPath.row])
         tableView.deselectRow(at: indexPath, animated: false)
+        switch dataSource.cellModels[indexPath.row] {
+        case .cell(let model):
+            selectionActionBlock?(model)
+        default: return
+        }
     }
     
     public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row == dataSource.configurationModels.count - 1 {
+        let containsData = dataSource.cellModels.contains(where: {
+            if case .cell = $0 {
+                return true
+            }
+            
+            return false
+        })
+        
+        if containsData, indexPath.row == dataSource.cellModels.count - 1 {
             loadData()
         }
     }

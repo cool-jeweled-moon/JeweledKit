@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		26CA3DE44180FBC6FA9649B2 /* Pods_JeweledKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 680400B23DFB7F7A09411B9C /* Pods_JeweledKit_Tests.framework */; };
-		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		73A7B4EFEA604ED357AAE2AC /* Pods_JeweledKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25FB969081C0F141F96F2EFC /* Pods_JeweledKit_Example.framework */; };
+		A127911C251A2BE8009F76CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1279105251A2BE8009F76CD /* AppDelegate.swift */; };
 		A13F6A5C2511182C00C8FED3 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A13F6A5A2511182C00C8FED3 /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,6 @@
 		50A27C7C40F73AFDAEC63A4F /* Pods-JeweledKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeweledKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-JeweledKit_Example/Pods-JeweledKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* JeweledKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JeweledKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* JeweledKit_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JeweledKit_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +41,7 @@
 		680400B23DFB7F7A09411B9C /* Pods_JeweledKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JeweledKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		706345074CB169F13F42BD10 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		7303D4C0831C603C695B8448 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A1279105251A2BE8009F76CD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A13F6A5B2511182C00C8FED3 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		C2F05CA803EEFE127F1CF637 /* Pods-JeweledKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeweledKit_Example.release.xcconfig"; path = "Target Support Files/Pods-JeweledKit_Example/Pods-JeweledKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		E3FE5219424DA94FB6D0BAEE /* Pods-JeweledKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JeweledKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-JeweledKit_Tests/Pods-JeweledKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 		607FACD21AFB9204008FA782 /* Example for JeweledKit */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				A1279105251A2BE8009F76CD /* AppDelegate.swift */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for JeweledKit";
@@ -209,7 +209,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 1160;
+						LastSwiftMigration = 1200;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -326,8 +326,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A127911C251A2BE8009F76CD /* AppDelegate.swift in Sources */,
 				A13F6A5C2511182C00C8FED3 /* DataModel.xcdatamodeld in Sources */,
-				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,12 +469,14 @@
 			baseConfigurationReference = 50A27C7C40F73AFDAEC63A4F /* Pods-JeweledKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = JeweledKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 			};
@@ -485,6 +487,7 @@
 			baseConfigurationReference = C2F05CA803EEFE127F1CF637 /* Pods-JeweledKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = JeweledKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -500,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24DC18C842CFFF08978B7A59 /* Pods-JeweledKit_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -523,6 +527,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E3FE5219424DA94FB6D0BAEE /* Pods-JeweledKit_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

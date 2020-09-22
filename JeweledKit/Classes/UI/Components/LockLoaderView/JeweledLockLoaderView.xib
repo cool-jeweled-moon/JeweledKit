@@ -11,7 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="ZTM-J0-uhx" customClass="JeweledLockActivityView" customModule="JeweledKit" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="ZTM-J0-uhx" customClass="JeweledLockLoaderView" customModule="JeweledKit" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -24,7 +24,7 @@
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bC5-4U-7kY">
                             <rect key="frame" x="79.5" y="20" width="41.5" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -36,6 +36,10 @@
             <viewLayoutGuide key="safeArea" id="nri-xU-EjG"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="nri-xU-EjG" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Qb1-3i-ddh" secondAttribute="bottom" constant="16" id="3fp-NO-JSB"/>
+                <constraint firstItem="Qb1-3i-ddh" firstAttribute="top" relation="greaterThanOrEqual" secondItem="nri-xU-EjG" secondAttribute="top" constant="16" id="F4U-di-6Vo"/>
+                <constraint firstItem="Qb1-3i-ddh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nri-xU-EjG" secondAttribute="leading" constant="16" id="KrS-wx-E33"/>
+                <constraint firstItem="nri-xU-EjG" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Qb1-3i-ddh" secondAttribute="trailing" constant="16" id="o0q-r3-aZY"/>
                 <constraint firstItem="Qb1-3i-ddh" firstAttribute="centerY" secondItem="ZTM-J0-uhx" secondAttribute="centerY" id="qA0-Vt-eEH"/>
                 <constraint firstItem="Qb1-3i-ddh" firstAttribute="centerX" secondItem="ZTM-J0-uhx" secondAttribute="centerX" id="u9A-dz-j2G"/>
             </constraints>
