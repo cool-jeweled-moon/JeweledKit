@@ -21,11 +21,23 @@ public protocol JeweledPaginationTableViewDataSource {
 }
 
 public struct JeweledPaginationTableViewConfiguration {
-    public var searchDebounce: TimeInterval = 0.2
-    public var estimatedRowHeight:CGFloat = 100.0
-    public var showTopSeparator: Bool = false
-    public var showSeparatorsWhileEmpty: Bool = false
-    public var emptyDataSourceMessage = "Not found"
+    public var searchDebounce: TimeInterval
+    public var estimatedRowHeight: CGFloat
+    public var showTopSeparator: Bool
+    public var showSeparatorsWhileEmpty: Bool
+    public var emptyDataSourceMessage: String
+    
+    public init(searchDebounce: TimeInterval = 0.2,
+                estimatedRowHeight: CGFloat = 100.0,
+                showTopSeparator: Bool = false,
+                showSeparatorsWhileEmpty: Bool = false,
+                emptyDataSourceMessage: String = "Not found") {
+        self.searchDebounce = searchDebounce
+        self.estimatedRowHeight = estimatedRowHeight
+        self.showTopSeparator = showTopSeparator
+        self.showSeparatorsWhileEmpty = showSeparatorsWhileEmpty
+        self.emptyDataSourceMessage = emptyDataSourceMessage
+    }
 }
 
 public final class JeweledPaginationTableViewController<DataSource>: UIViewController,
@@ -53,8 +65,8 @@ where DataSource: JeweledPaginationTableViewDataSource {
         }
     }
     
-    public init(dataSource: DataSource,
-                configuration: JeweledPaginationTableViewConfiguration) {
+    public required init(dataSource: DataSource,
+                         configuration: JeweledPaginationTableViewConfiguration = JeweledPaginationTableViewConfiguration()) {
         self.dataSource = dataSource
         self.configuration = configuration
         super.init(nibName: nil, bundle: nil)
