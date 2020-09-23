@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JeweledKit'
-  s.version          = '0.1.19'
+  s.version          = '0.1.20'
   s.summary          = 'A short description.'
 
   s.description      = <<-DESC
