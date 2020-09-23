@@ -7,17 +7,18 @@
 
 import UIKit
 
-public enum PaginationTableCellType<T: JeweledConfigurableView> {
-    case cell(model: T.ConfigurationModel)
-    case loader(model: JeweledLockLoaderTableViewCell.ConfigurationModel)
+public enum PaginationTableCellType<Cell: JeweledConfigurableView,
+                                    LoaderCell: JeweledConfigurableView> {
+    case cell(model: Cell.ConfigurationModel)
+    case loader(model: LoaderCell.ConfigurationModel)
 }
 
 public protocol JeweledPaginationTableViewDataSource {
     
-    typealias CellType = PaginationTableCellType<Cell>
-    typealias LoaderCell = JeweledLockLoaderTableViewCell
+    typealias CellType = PaginationTableCellType<Cell, LoaderCell>
     
     associatedtype Cell: UITableViewCell, JeweledConfigurableView
+    associatedtype LoaderCell: UITableViewCell, JeweledConfigurableView
     
     var cellModels: [CellType] { get }
     
@@ -97,7 +98,7 @@ where DataSource: JeweledPaginationTableViewDataSource {
     
     private func configureUI() {
         tableView.register(DataSource.Cell.self)
-        tableView.register(JeweledLockLoaderTableViewCell.self)
+        tableView.register(DataSource.LoaderCell.self)
         tableView.configureAutomaticDimensions(estimatedRowHeight: configuration.estimatedRowHeight)
         tableView.tableHeaderView = configuration.showTopSeparator ? nil : UIView()
         tableView.tableFooterView = configuration.showSeparatorsWhileEmpty ? nil : UIView()
@@ -162,7 +163,7 @@ where DataSource: JeweledPaginationTableViewDataSource {
             
             return cell
         case .loader(let model):
-            let cell: JeweledLockLoaderTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
+            let cell: DataSource.LoaderCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
             cell.configure(with: model)
             cell.selectionStyle = .none
             cell.separatorInset.left = CGFloat.greatestFiniteMagnitude

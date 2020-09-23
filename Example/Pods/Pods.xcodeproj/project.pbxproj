@@ -70,7 +70,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		09F94DBC19C101DA9D170CE902E03E30 /* JeweledKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JeweledKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		09F94DBC19C101DA9D170CE902E03E30 /* JeweledKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = JeweledKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		0C9E2A0E0A9FBF1ED0E8DE82809D499A /* JeweledRequestLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledRequestLoader.swift; sourceTree = "<group>"; };
 		0CC21ED012802D7FE302E4A6930A8185 /* Pods-JeweledKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JeweledKit_Tests.modulemap"; sourceTree = "<group>"; };
 		0CDB9D4ACB1BD2CEDDAB8426460E2BC2 /* Pods-JeweledKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JeweledKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,8 +83,8 @@
 		1D73069E467B332AB127884B69A41042 /* JeweledReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledReusableView.swift; sourceTree = "<group>"; };
 		1E4D165C2657E1754FFBEAB7D514C433 /* URLRequestFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLRequestFactory.swift; sourceTree = "<group>"; };
 		1EA27C0EC4455289A253771A0ED7BA16 /* JeweledCountdownTimer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledCountdownTimer.swift; sourceTree = "<group>"; };
-		1EA9226CA6329518DE1939263EDDF287 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		20FDA9CC1AAA42D4B2B2F32BAB51C09E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1EA9226CA6329518DE1939263EDDF287 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		20FDA9CC1AAA42D4B2B2F32BAB51C09E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		32D6140562BA7B4B8B4628F8FAEA80A1 /* Pods-JeweledKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JeweledKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		36924AEA242C436B1A4ABDF37BF589B5 /* JeweledIdentifiable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledIdentifiable.swift; sourceTree = "<group>"; };
@@ -103,18 +103,18 @@
 		6AA8DB117BEF34892B1FE4C5A1E93D02 /* UIView+FirstResponding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+FirstResponding.swift"; sourceTree = "<group>"; };
 		739FF18478704120BD51F25339EED595 /* Pods-JeweledKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JeweledKit_Example-dummy.m"; sourceTree = "<group>"; };
 		755CC6FDBA2B2D678541645A513FA440 /* NSObject+ClassName.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSObject+ClassName.swift"; sourceTree = "<group>"; };
-		76B8E24E7EB89903D854E2C63BEA2CF1 /* Pods_JeweledKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JeweledKit_Tests.framework; path = "Pods-JeweledKit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76B8E24E7EB89903D854E2C63BEA2CF1 /* Pods_JeweledKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JeweledKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A48E22B069B8880AEC74395AF2CC2B9 /* JeweledNibLoadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledNibLoadable.swift; sourceTree = "<group>"; };
-		7F544F450C1D47C8F9D94384D9D68223 /* Pods_JeweledKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JeweledKit_Example.framework; path = "Pods-JeweledKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F544F450C1D47C8F9D94384D9D68223 /* Pods_JeweledKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JeweledKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80ADDDE35FA78455F2E4B0F0E03BAF67 /* Pods-JeweledKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JeweledKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		81255491825FD497967FC41A8A5EC618 /* Pods-JeweledKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JeweledKit_Tests-dummy.m"; sourceTree = "<group>"; };
-		847742D6917981A5051499E36DD1BB5C /* JeweledKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JeweledKit.framework; path = JeweledKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		847742D6917981A5051499E36DD1BB5C /* JeweledKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JeweledKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8917AA959E0AB9E6609251D617532D38 /* JeweledKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JeweledKit-prefix.pch"; sourceTree = "<group>"; };
 		9315D9A15C1565B36CB7CDC3C957AEC2 /* NSManagedObject+Create.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Create.swift"; sourceTree = "<group>"; };
 		9448AF2F9BC32DBE518FE83794924B22 /* JeweledKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JeweledKit.modulemap; sourceTree = "<group>"; };
 		9790B0624BD2C8940A53B4C4F2CFCF57 /* Pods-JeweledKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JeweledKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9C7FF8444FF016889D8C80C2437E5D26 /* DispatchQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F3DF07E3DE22D623C306DC9A02FE46D /* JeweledStackScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledStackScrollView.swift; sourceTree = "<group>"; };
 		A524FEE1D3CDAF2541FB1F9C360A94E2 /* JeweledDebouncer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledDebouncer.swift; sourceTree = "<group>"; };
 		A7C9A20E1C7DAE1F13669B9AE8F19733 /* JeweledKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JeweledKit-Info.plist"; sourceTree = "<group>"; };
@@ -171,7 +171,6 @@
 			children = (
 				B974847563A67C0725910DA2650B3C23 /* JeweledRepository.swift */,
 			);
-			name = Repository;
 			path = Repository;
 			sourceTree = "<group>";
 		};
@@ -183,7 +182,6 @@
 				2D8B13F86AB1E5728CFF509C56B70C7E /* TableViewContainerCell */,
 				618341D3FC5D92DD68927D5B7B5BA223 /* ViewWithSeparators */,
 			);
-			name = Components;
 			path = Components;
 			sourceTree = "<group>";
 		};
@@ -196,7 +194,6 @@
 				9315D9A15C1565B36CB7CDC3C957AEC2 /* NSManagedObject+Create.swift */,
 				755CC6FDBA2B2D678541645A513FA440 /* NSObject+ClassName.swift */,
 			);
-			name = Storage;
 			path = Storage;
 			sourceTree = "<group>";
 		};
@@ -216,7 +213,6 @@
 				5A68E5EA7C7BA84B3B4C3BF46E3AD125 /* JeweledLockLoaderView.swift */,
 				4691CAE69B9D191B7291E372993F3EE8 /* JeweledLockLoaderView.xib */,
 			);
-			name = LockLoaderView;
 			path = LockLoaderView;
 			sourceTree = "<group>";
 		};
@@ -225,7 +221,6 @@
 			children = (
 				476390DBBC10FA4A8A1FFDC3765EB129 /* JeweledTableViewContainerCell.swift */,
 			);
-			name = TableViewContainerCell;
 			path = TableViewContainerCell;
 			sourceTree = "<group>";
 		};
@@ -235,20 +230,19 @@
 				9F3DF07E3DE22D623C306DC9A02FE46D /* JeweledStackScrollView.swift */,
 				D85576A58C4043B8FCDA09FE7CE5C426 /* JeweledStackScrollView.xib */,
 			);
-			name = StackScrollView;
 			path = StackScrollView;
 			sourceTree = "<group>";
 		};
 		40AB938BB5DBC351084B00127C6ECFB3 /* JeweledKit */ = {
 			isa = PBXGroup;
 			children = (
-				4FEBB7A9B274C5AA53D98238374E3C7D /* Constants */,
 				AB5EE22FEE8A002922AF047DFDFE4131 /* Core */,
+				ED5E36300C32A14EA9ED25E9D9EA7739 /* UI */,
+				8524E463A1E8408D57B3C0A26E1A69A1 /* Utils */,
+				4FEBB7A9B274C5AA53D98238374E3C7D /* Constants */,
 				4728716BE2E0602590EB7FFFEDD11E37 /* Extensions */,
 				9697481C810C59EB281A88B1CDA0ED9C /* Pod */,
 				899B7FFDF70C08CF36E54FE1BC3AFA54 /* Support Files */,
-				ED5E36300C32A14EA9ED25E9D9EA7739 /* UI */,
-				8524E463A1E8408D57B3C0A26E1A69A1 /* Utils */,
 			);
 			name = JeweledKit;
 			path = ../..;
@@ -278,7 +272,6 @@
 				688DD72B36067B96FCF3E33496330D06 /* JeweledSimpleTableViewController.swift */,
 				FD52F99C22DDC2116846A9493DAADAA3 /* JeweledSimpleTableViewController.xib */,
 			);
-			name = SimpleTableView;
 			path = SimpleTableView;
 			sourceTree = "<group>";
 		};
@@ -296,7 +289,6 @@
 				BD3B969C9222149A06868A1C1367CEB4 /* JeweledViewWithSeparators.swift */,
 				C851DE4EA5E675AA3BE3FDB71C2A1716 /* JeweledViewWithSeparators.xib */,
 			);
-			name = ViewWithSeparators;
 			path = ViewWithSeparators;
 			sourceTree = "<group>";
 		};
@@ -308,7 +300,6 @@
 				7A48E22B069B8880AEC74395AF2CC2B9 /* JeweledNibLoadable.swift */,
 				1D73069E467B332AB127884B69A41042 /* JeweledReusableView.swift */,
 			);
-			name = Protocols;
 			path = Protocols;
 			sourceTree = "<group>";
 		};
@@ -409,7 +400,6 @@
 				0C9E2A0E0A9FBF1ED0E8DE82809D499A /* JeweledRequestLoader.swift */,
 				1E4D165C2657E1754FFBEAB7D514C433 /* URLRequestFactory.swift */,
 			);
-			name = RequestLoader;
 			path = RequestLoader;
 			sourceTree = "<group>";
 		};
@@ -440,7 +430,6 @@
 				6AA8DB117BEF34892B1FE4C5A1E93D02 /* UIView+FirstResponding.swift */,
 				BB55DC3DCA7C7AB3B341D80BAC835828 /* UIViewController+Alert.swift */,
 			);
-			name = Extensions;
 			path = Extensions;
 			sourceTree = "<group>";
 		};
@@ -458,7 +447,6 @@
 				FFC3B410EC891C1D0156C5A286CB6B34 /* PaginationTableView */,
 				555E8A33C3E78C4566E6F703180471B9 /* SimpleTableView */,
 			);
-			name = Containers;
 			path = Containers;
 			sourceTree = "<group>";
 		};
@@ -480,7 +468,6 @@
 				B95ECF20BC3854EE3C30F49896585162 /* JeweledPaginationTableView.swift */,
 				63C772581CEB45B7F2F6049340FD9CE1 /* JeweledPaginationTableViewController.swift */,
 			);
-			name = PaginationTableView;
 			path = PaginationTableView;
 			sourceTree = "<group>";
 		};
@@ -1020,8 +1007,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

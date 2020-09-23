@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol JeweledCoordinator {
+public protocol JeweledCoordinator {
     var childCoordinators: [JeweledCoordinator] { get set }
     var navigationController: UINavigationController { get set }
 
