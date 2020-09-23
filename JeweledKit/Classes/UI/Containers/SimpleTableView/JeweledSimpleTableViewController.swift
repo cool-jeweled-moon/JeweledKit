@@ -48,7 +48,7 @@ where Cell: UITableViewCell, Cell: JeweledConfigurableView {
     // MARK: - Initialization
     
     convenience init() {
-        self.init(nibName: "SimpleTableViewContainer", bundle: nil)
+        self.init(nibName: "\(JeweledSimpleTableViewController.self)", bundle: nil)
     }
 
     deinit {
