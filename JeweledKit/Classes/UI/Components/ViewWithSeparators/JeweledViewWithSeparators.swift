@@ -7,23 +7,32 @@
 
 import UIKit
 
-final class JeweledViewWithSeparators: UIView, JeweledNibAwakable {
+public final class JeweledViewWithSeparators: UIView, JeweledNibAwakable {
     
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet public weak var titleLabel: UILabel!
     @IBOutlet private weak var topSeparator: UIView!
     @IBOutlet private weak var bottomSeparator: UIView!
+    @IBOutlet private weak var topSeparatorHeightConstraint: NSLayoutConstraint!
+    @IBOutlet private weak var bottomSeparatorHeightConstraint: NSLayoutConstraint!
     
-    override func awakeAfter(using aDecoder: NSCoder) -> Any? {
+    public override func awakeAfter(using aDecoder: NSCoder) -> Any? {
         super.awakeAfter(using: aDecoder)
         
         return awakeAfterCoder()
     }
     
-    @objc public func showTopSeparator(show: Bool) {
+    public override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        topSeparatorHeightConstraint.constant = .pixelHeight
+        bottomSeparatorHeightConstraint.constant = .pixelHeight
+    }
+    
+    public func showTopSeparator(show: Bool) {
         topSeparator.isHidden = !show
     }
 
-    @objc public func showBottomSeparator(show: Bool) {
+    public func showBottomSeparator(show: Bool) {
         bottomSeparator.isHidden = !show
     }
 }
