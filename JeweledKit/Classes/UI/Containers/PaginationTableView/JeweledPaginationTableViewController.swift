@@ -19,8 +19,10 @@ public protocol JeweledPaginationTableViewDataSource {
     
     associatedtype Cell: UITableViewCell, JeweledConfigurableView
     associatedtype LoaderCell: UITableViewCell, JeweledConfigurableView
+    associatedtype Model
     
     var cellModels: [CellType] { get }
+    var models: [Model] { get }
     
     func loadData(searchText: String?,
                   updateUI: @escaping (Error?) -> Void)
@@ -56,7 +58,8 @@ public final class JeweledPaginationTableViewController<DataSource>: UIViewContr
 UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate
 where DataSource: JeweledPaginationTableViewDataSource {
     
-    public var selectionActionBlock: ((_ model: DataSource.Cell.ConfigurationModel) -> Void)? {
+    public var selectionActionBlock: ((_ model: DataSource.Model,
+                                       _ configurationModel: DataSource.Cell.ConfigurationModel) -> Void)? {
         didSet {
             paginationTableView.tableView.allowsSelection = selectionActionBlock != nil
         }
@@ -181,8 +184,9 @@ where DataSource: JeweledPaginationTableViewDataSource {
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
         switch dataSource.cellModels[indexPath.row] {
-        case .cell(let model):
-            selectionActionBlock?(model)
+        case .cell(let configurationModel):
+            let model = dataSource.models[indexPath.row]
+            selectionActionBlock?(model, configurationModel)
         default: return
         }
     }
