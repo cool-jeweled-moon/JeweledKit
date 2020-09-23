@@ -35,6 +35,7 @@
 		986439457631B1917038ADB2F1D7F595 /* JeweledDebouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A524FEE1D3CDAF2541FB1F9C360A94E2 /* JeweledDebouncer.swift */; };
 		99BA8556BA35BF723ED49404F9295BC2 /* JeweledStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3C642889B989C55EC02A665FEB018F /* JeweledStorage.swift */; };
 		9DF0814D3FDDD68D078187A56D2A579B /* JeweledCountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA27C0EC4455289A253771A0ED7BA16 /* JeweledCountdownTimer.swift */; };
+		A1EBE7BC251B7D2C00BB77C1 /* JeweledNibAwakable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EBE7BB251B7D2C00BB77C1 /* JeweledNibAwakable.swift */; };
 		A309A16B641774AA6B10C67BE99C11AB /* Pods-JeweledKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1601233F0B04BE5B0F93B6AF31B8E05C /* Pods-JeweledKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACEFC71774B7448FD43938632CA33564 /* JeweledKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 553AB6409A1DF07D04101C9C5F589DC7 /* JeweledKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B2B25064D04B7B1E734200D68D1AB419 /* JeweledIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36924AEA242C436B1A4ABDF37BF589B5 /* JeweledIdentifiable.swift */; };
@@ -116,6 +117,7 @@
 		9C7FF8444FF016889D8C80C2437E5D26 /* DispatchQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F3DF07E3DE22D623C306DC9A02FE46D /* JeweledStackScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledStackScrollView.swift; sourceTree = "<group>"; };
+		A1EBE7BB251B7D2C00BB77C1 /* JeweledNibAwakable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JeweledNibAwakable.swift; sourceTree = "<group>"; };
 		A524FEE1D3CDAF2541FB1F9C360A94E2 /* JeweledDebouncer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledDebouncer.swift; sourceTree = "<group>"; };
 		A7C9A20E1C7DAE1F13669B9AE8F19733 /* JeweledKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JeweledKit-Info.plist"; sourceTree = "<group>"; };
 		A92204B916203CEE300D6FEAF7FBF599 /* JeweledConfigurableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = JeweledConfigurableView.swift; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 				10000B927AB77552C5615E2493FEFD53 /* JeweledCoordinator.swift */,
 				7A48E22B069B8880AEC74395AF2CC2B9 /* JeweledNibLoadable.swift */,
 				1D73069E467B332AB127884B69A41042 /* JeweledReusableView.swift */,
+				A1EBE7BB251B7D2C00BB77C1 /* JeweledNibAwakable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -643,6 +646,7 @@
 				E19AD7B9457AA4807EB9E79EB898A6AC /* JeweledLockLoaderView.xib in Sources */,
 				38A8B1814500168C65FFBD45ED334EB2 /* JeweledNetworkLogFormatter.swift in Sources */,
 				F1E4F8BB246B092087901C33AA72BBD8 /* JeweledNibLoadable.swift in Sources */,
+				A1EBE7BC251B7D2C00BB77C1 /* JeweledNibAwakable.swift in Sources */,
 				85DAF485C135B959C3F43912F1930734 /* JeweledPaginationTableView.swift in Sources */,
 				E85FFB8437A5394C6EDA65ED2F4922A0 /* JeweledPaginationTableViewController.swift in Sources */,
 				8B281EC10C8D2F497F8000649DB96D65 /* JeweledPersistable.swift in Sources */,

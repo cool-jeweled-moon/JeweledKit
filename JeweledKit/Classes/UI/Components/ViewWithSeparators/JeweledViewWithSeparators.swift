@@ -7,11 +7,17 @@
 
 import UIKit
 
-final class JeweledViewWithSeparators: UIView {
+final class JeweledViewWithSeparators: UIView, JeweledNibAwakable {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet private weak var topSeparator: UIView!
     @IBOutlet private weak var bottomSeparator: UIView!
+    
+    override func awakeAfter(using aDecoder: NSCoder) -> Any? {
+        super.awakeAfter(using: aDecoder)
+        
+        return awakeAfterCoder()
+    }
     
     @objc public func showTopSeparator(show: Bool) {
         topSeparator.isHidden = !show
