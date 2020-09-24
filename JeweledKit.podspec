@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JeweledKit'
-  s.version          = '0.1.24'
+  s.version          = '0.1.25'
   s.summary          = 'A short description.'
 
   s.description      = <<-DESC
@@ -21,14 +21,20 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/cool-jeweled-moon/JeweledKit.git', :tag => s.version.to_s }
   s.swift_version    = '5.0'
   s.ios.deployment_target = '10.0'
-
-  s.source_files = 'JeweledKit/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'JeweledKit' => ['JeweledKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.default_subspecs = "Core", "UI", "Utils"
+  
+  s.subspec "Core" do |sp|
+    sp.source_files  = ["JeweledKit/Classes/Core/**/*"]
+  end
+  
+  s.subspec "UI" do |sp|
+    sp.source_files  = ["JeweledKit/Classes/UI/**/*"]
+  end
+  
+  s.subspec "Utils" do |sp|
+    sp.source_files  = ["JeweledKit/Classes/Utils/**/*",
+                        "JeweledKit/Classes/Extensions/**/*",
+                        "JeweledKit/Classes/Constants/**/*"]
+  end
 end
