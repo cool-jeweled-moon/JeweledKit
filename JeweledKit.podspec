@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JeweledKit'
-  s.version          = '0.1.25'
+  s.version          = '0.1.26'
   s.summary          = 'A short description.'
 
   s.description      = <<-DESC
@@ -25,16 +25,17 @@ TODO: Add long description of the pod here.
   s.default_subspecs = "Core", "UI", "Utils"
   
   s.subspec "Core" do |sp|
-    sp.source_files  = ["JeweledKit/Classes/Core/**/*"]
+      sp.source_files  = ["JeweledKit/Classes/Core/**/*"]
   end
   
   s.subspec "UI" do |sp|
-    sp.source_files  = ["JeweledKit/Classes/UI/**/*"]
+      sp.dependency 'Utils'
+      sp.source_files  = ["JeweledKit/Classes/UI/**/*"]
   end
   
   s.subspec "Utils" do |sp|
-    sp.source_files  = ["JeweledKit/Classes/Utils/**/*",
-                        "JeweledKit/Classes/Extensions/**/*",
-                        "JeweledKit/Classes/Constants/**/*"]
+      sp.source_files  = ["JeweledKit/Classes/Utils/**/*",
+                          "JeweledKit/Classes/Extensions/**/*",
+                          "JeweledKit/Classes/Constants/**/*"]
   end
 end
