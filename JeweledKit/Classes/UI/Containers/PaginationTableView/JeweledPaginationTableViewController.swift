@@ -36,21 +36,15 @@ public struct JeweledPaginationTableViewConfiguration {
     public var estimatedRowHeight: CGFloat
     public var showTopSeparator: Bool
     public var showSeparatorsWhileEmpty: Bool
-    public var emptySearchedDataMessage: String?
-    public var emptyDataSourceMessage: String?
     
-    public init(searchDebounce: TimeInterval = 0.2,
+    public init(searchDebounce: TimeInterval = 0.3,
                 estimatedRowHeight: CGFloat = 100.0,
                 showTopSeparator: Bool = false,
-                showSeparatorsWhileEmpty: Bool = false,
-                emptyDataSourceMessage: String? = "No data",
-                emptySearchedDataMessage: String? = "Not found") {
+                showSeparatorsWhileEmpty: Bool = false) {
         self.searchDebounce = searchDebounce
         self.estimatedRowHeight = estimatedRowHeight
         self.showTopSeparator = showTopSeparator
         self.showSeparatorsWhileEmpty = showSeparatorsWhileEmpty
-        self.emptyDataSourceMessage = emptyDataSourceMessage
-        self.emptySearchedDataMessage = emptySearchedDataMessage
     }
 }
 
