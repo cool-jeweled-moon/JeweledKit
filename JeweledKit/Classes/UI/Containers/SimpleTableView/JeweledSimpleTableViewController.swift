@@ -12,14 +12,23 @@ private struct Constants {
 }
 
 public struct JeweledSimpleTableViewConfiguration {
-    public var separatorColor = UITableView().separatorColor
-    public var showTopSeparator = true
-    public var showBottomSeparator = true
-    public var leftSeparatorInset: CGFloat = 0
-    public var rightSeparatorInset: CGFloat = 0
-    public var rowHeight: CGFloat = UITableView.automaticDimension
-    public var estimatedRowHeight: CGFloat = 100
-    public var allowAnimations: Bool = true
+    public var separatorColor: UIColor?
+    public var showTopSeparator: Bool
+    public var showBottomSeparator: Bool
+    public var rowHeight: CGFloat
+    public var estimatedRowHeight: CGFloat
+    
+    public init(separatorColor: UIColor? = UITableView().separatorColor,
+                showTopSeparator: Bool = true,
+                showBottomSeparator: Bool = true,
+                rowHeight: CGFloat = UITableView.automaticDimension,
+                estimatedRowHeight: CGFloat = 100) {
+        self.separatorColor = separatorColor
+        self.showTopSeparator = showTopSeparator
+        self.showBottomSeparator = showBottomSeparator
+        self.rowHeight = rowHeight
+        self.estimatedRowHeight = estimatedRowHeight
+    }
 }
 
 public class JeweledSimpleTableViewController<Cell>: UIViewController, UITableViewDataSource, UITableViewDelegate
@@ -118,9 +127,6 @@ where Cell: UITableViewCell, Cell: JeweledConfigurableView {
         
         // Hide bottom separator
         tableViewBottomConstraint?.constant = .pixelHeight
-        
-        tableView.separatorInset.left = configuration.leftSeparatorInset
-        tableView.separatorInset.right = configuration.rightSeparatorInset
     }
     
     private func updateSelecionEnabled() {
@@ -135,10 +141,7 @@ where Cell: UITableViewCell, Cell: JeweledConfigurableView {
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: Cell = tableView.dequeueReusableCell(forIndexPath: indexPath)
-        
         cell.configure(with: dataSource[indexPath.row])
-        cell.separatorInset.left = configuration.leftSeparatorInset
-        cell.separatorInset.right = configuration.rightSeparatorInset
         
         return cell
     }

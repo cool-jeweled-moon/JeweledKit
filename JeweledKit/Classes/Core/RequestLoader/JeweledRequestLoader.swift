@@ -76,11 +76,12 @@ public class JeweledRequestLoader: JeweledRequestLoaderProtocol {
         
         let dataTask = session.dataTask(with: urlRequest) { [weak self] data, response, error in
             guard let self = self else { return }
+            if let error = error as NSError?, error.code == NSURLErrorCancelled {
+                return
+            }
             
             var resultData = data
-            var resultError = error as NSError?
-            
-            guard resultError?.code != NSURLErrorCancelled else { return }
+            var resultError = error
             
             if let payloadKey = request.payloadKey, let data = data,
                 let json = try? JSONSerialization.jsonObject(with: data, options: []),
@@ -92,7 +93,7 @@ public class JeweledRequestLoader: JeweledRequestLoaderProtocol {
             }
             
             if let error = self.errorParser.parse(from: data) {
-                resultError = error as NSError
+                resultError = error
             }
 
             if self.isLogEnabled {
