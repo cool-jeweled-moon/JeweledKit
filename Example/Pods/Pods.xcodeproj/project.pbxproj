@@ -194,7 +194,6 @@
 				13DB435414A4972164E36F09861287F9 /* JeweledPersistable.swift */,
 				FB3C642889B989C55EC02A665FEB018F /* JeweledStorage.swift */,
 				9315D9A15C1565B36CB7CDC3C957AEC2 /* NSManagedObject+Create.swift */,
-				755CC6FDBA2B2D678541645A513FA440 /* NSObject+ClassName.swift */,
 			);
 			path = Storage;
 			sourceTree = "<group>";
@@ -253,6 +252,7 @@
 		4728716BE2E0602590EB7FFFEDD11E37 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				755CC6FDBA2B2D678541645A513FA440 /* NSObject+ClassName.swift */,
 				9C7FF8444FF016889D8C80C2437E5D26 /* DispatchQueue.swift */,
 			);
 			name = Extensions;
