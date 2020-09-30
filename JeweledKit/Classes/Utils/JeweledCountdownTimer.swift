@@ -41,6 +41,8 @@ public class JeweledCountdownTimer {
         }
     }
     
+    public init() {}
+    
     deinit {
         timer?.invalidate()
     }
